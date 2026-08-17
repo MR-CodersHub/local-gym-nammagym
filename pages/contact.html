@@ -1,0 +1,329 @@
+﻿<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact &amp; Location · Namma Gym Indiranagar</title>
+  <meta name="description"
+    content="Get in touch with Namma Gym Bengaluru. Visit our 14,000 sq.ft facility on 100ft Road Indiranagar or call our front desk." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="icon" href="../assets/logo.png" />
+</head>
+
+<body class="page-public">
+
+  <!-- ============== SHARED NAVBAR ============== -->
+  <header class="hdr">
+    <div class="hdr__row">
+      <a class="hdr__brand" href="../index.html">
+        <span class="hdr__mark">
+          <img src="../assets/logo.png" alt="Namma Gym Logo" />
+        </span>
+        <span class="hdr__name">NAMMA GYM</span>
+      </a>
+
+      <nav class="hdr__nav" aria-label="Primary">
+        <a href="../index.html">Home</a>
+        <a href="home-2.html">Home 2</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html" class="is-active">Contact</a>
+      </nav>
+
+      <div class="hdr__cta">
+        <button type="button" class="theme-toggle-btn" aria-label="Toggle Theme" title="Switch Light/Dark Mode"><i class="fa-solid fa-sun"></i></button>
+        <button type="button" class="rtl-toggle-btn" aria-label="Toggle RTL layout" title="Switch LTR/RTL">RTL</button>
+
+        <!-- Profile Dropdown -->
+        <div class="profile-dropdown-wrap">
+          <button type="button" class="profile-btn" aria-label="User account and portals" title="Member &amp; Admin Portals"><i class="fa-solid fa-user"></i></button>
+          <div class="profile-menu">
+            <div class="profile-menu__header">
+              <b>Namma Gym Portals</b>
+              <span>Member &amp; Management Access</span>
+            </div>
+            <ul class="profile-menu__links">
+              <li><a href="../auth/login.html"><i class="fa-solid fa-arrow-right-to-bracket text-orange-500"></i><span>Member Login</span></a></li>
+              <li><a href="../auth/signup.html"><i class="fa-solid fa-user-plus text-amber-400"></i><span>Join / Signup</span><span class="profile-menu__badge">Trial</span></a></li>
+              <li><a href="../auth/user/user-dashboard.html"><i class="fa-solid fa-id-card text-emerald-400"></i><span>User Dashboard</span><span class="profile-menu__badge bg-emerald-600">Member</span></a></li>
+              <li><a href="../auth/admin/admin-dashboard.html"><i class="fa-solid fa-shield-halved text-rose-400"></i><span>Admin Dashboard</span><span class="profile-menu__badge bg-rose-600">Staff</span></a></li>
+            </ul>
+          </div>
+        </div>
+
+        <button class="hdr__burger" aria-label="Open menu" aria-expanded="false">&#9776;</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-nav-drawer">
+    <div class="mobile-nav-header">
+      <div class="flex items-center gap-2.5">
+        <span class="w-8 h-8 rounded-full overflow-hidden shadow-md flex items-center justify-center bg-orange-600 shrink-0">
+          <img src="../assets/logo.png" alt="Namma Gym Logo" class="w-full h-full object-cover" />
+        </span>
+        <span class="font-['Anton',sans-serif] text-2xl text-white">NAMMA<span class="text-orange-500">GYM</span></span>
+      </div>
+      <button class="mobile-nav-close text-2xl text-slate-300 hover:text-white">&times;</button>
+    </div>
+    <div class="mobile-nav-links">
+      <a href="../index.html">Home</a>
+      <a href="home-2.html">Home 2</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html" class="is-active">Contact</a>
+    </div>
+  </div>
+
+  <!-- ============== PAGE HERO ============== -->
+  <section class="page-hero">
+    <div class="page-hero__inner">
+      <p class="eyebrow">STEP INSIDE · CONNECT WITH US</p>
+      <h1>Find the Sanctuary.</h1>
+      <p>
+        Located right on 100ft Road in Indiranagar. Drop in for a tour with our head coach, or send us an inquiry below.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============== CONTACT FORM & LOCATIONS ============== -->
+  <section class="section">
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 48px; align-items: start;">
+      
+      <!-- Contact Form -->
+      <div style="background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 40px; box-shadow: var(--shadow-1);">
+        <h3 style="margin-bottom: 8px;">Direct Inquiries</h3>
+        <p style="color: var(--gray); font-size: 14px; margin-bottom: 28px;">We respond within 2 operational hours during gym hours.</p>
+
+        <form id="contactForm" data-form="contact" novalidate style="display: flex; flex-direction: column; gap: 20px;">
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+            <div>
+              <label for="name" style="display: block; font-family: var(--ff-head); font-size: 11px; letter-spacing: .06em; text-transform: uppercase; color: var(--navy); margin-bottom: 6px;">Full Name *</label>
+              <input type="text" id="name" name="name" required placeholder="e.g. Rahul Verma" style="width: 100%; padding: 12px 16px; border-radius: 8px; border: 1px solid var(--line); font-family: inherit; font-size: 14px; background: var(--paper); outline: none;" />
+            </div>
+            <div>
+              <label for="email" style="display: block; font-family: var(--ff-head); font-size: 11px; letter-spacing: .06em; text-transform: uppercase; color: var(--navy); margin-bottom: 6px;">Email Address *</label>
+              <input type="email" id="email" name="email" required placeholder="rahul@example.com" style="width: 100%; padding: 12px 16px; border-radius: 8px; border: 1px solid var(--line); font-family: inherit; font-size: 14px; background: var(--paper); outline: none;" />
+            </div>
+          </div>
+
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+            <div>
+              <label for="phone" style="display: block; font-family: var(--ff-head); font-size: 11px; letter-spacing: .06em; text-transform: uppercase; color: var(--navy); margin-bottom: 6px;">Phone Number *</label>
+              <input type="tel" id="phone" name="phone" required placeholder="+91 98765 43210" style="width: 100%; padding: 12px 16px; border-radius: 8px; border: 1px solid var(--line); font-family: inherit; font-size: 14px; background: var(--paper); outline: none;" />
+            </div>
+            <div>
+              <label for="interest" style="display: block; font-family: var(--ff-head); font-size: 11px; letter-spacing: .06em; text-transform: uppercase; color: var(--navy); margin-bottom: 6px;">Primary Track</label>
+              <select id="interest" name="interest" style="width: 100%; padding: 12px 16px; border-radius: 8px; border: 1px solid var(--line); font-family: inherit; font-size: 14px; background: var(--paper); outline: none;">
+                <option value="strength">Strength &amp; Barbell</option>
+                <option value="boxing">Boxing &amp; MMA</option>
+                <option value="pt">1-on-1 Personal Coaching</option>
+                <option value="recovery">Sauna &amp; Plunge</option>
+                <option value="general">General Membership</option>
+              </select>
+            </div>
+          </div>
+
+          <div>
+            <label for="message" style="display: block; font-family: var(--ff-head); font-size: 11px; letter-spacing: .06em; text-transform: uppercase; color: var(--navy); margin-bottom: 6px;">Your Goals or Question *</label>
+            <textarea id="message" name="message" rows="4" required placeholder="Tell us about your background or goals..." style="width: 100%; padding: 12px 16px; border-radius: 8px; border: 1px solid var(--line); font-family: inherit; font-size: 14px; background: var(--paper); outline: none;"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn--lg" style="width: 100%;">
+            <span>Send Direct Message</span> <i class="fa-solid fa-paper-plane text-xs"></i>
+          </button>
+        </form>
+      </div>
+
+      <!-- Locations -->
+      <div style="display: flex; flex-direction: column; gap: 24px;">
+        <!-- Location 1 -->
+        <div style="background: #fff; border: 2px solid var(--orange); border-radius: var(--radius); padding: 32px; box-shadow: var(--shadow-1);">
+          <span style="font-family: var(--ff-head); font-size: 11px; color: var(--orange); letter-spacing: .15em; text-transform: uppercase; display: block; margin-bottom: 6px;">FLAGSHIP LOCATION</span>
+          <h3 style="margin-bottom: 16px;">Indiranagar HQ</h3>
+          
+          <div style="display: flex; flex-direction: column; gap: 14px; font-size: 14px; color: var(--gray);">
+            <div style="display: flex; gap: 12px; align-items: flex-start;">
+              <i class="fa-solid fa-location-dot" style="color: var(--orange); margin-top: 4px;"></i>
+              <span style="color: var(--navy);">#482, 100ft Road, Opp. Metro Pillar 114, Indiranagar, Bengaluru 560038</span>
+            </div>
+            <div style="display: flex; gap: 12px; align-items: center;">
+              <i class="fa-solid fa-phone" style="color: var(--orange);"></i>
+              <a href="tel:+918049283720" style="color: var(--navy); text-decoration: none; font-weight: 600;">+91 80 4928 3720</a>
+            </div>
+            <div style="display: flex; gap: 12px; align-items: center;">
+              <i class="fa-solid fa-envelope" style="color: var(--orange);"></i>
+              <a href="mailto:indiranagar@nammagym.in" style="color: var(--navy); text-decoration: none; font-weight: 600;">indiranagar@nammagym.in</a>
+            </div>
+            <div style="display: flex; gap: 12px; align-items: flex-start;">
+              <i class="fa-regular fa-clock" style="color: var(--orange); margin-top: 4px;"></i>
+              <div>
+                <b style="color: var(--navy);">Monday – Sunday:</b> 05:00 AM – 10:00 PM
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Location 2 -->
+        <div style="background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 32px;">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
+            <span style="font-family: var(--ff-head); font-size: 11px; color: var(--gray); letter-spacing: .15em; text-transform: uppercase;">SECOND BRANCH</span>
+            <span style="background: var(--orange-lt); color: var(--orange); font-family: var(--ff-head); font-size: 10px; padding: 2px 8px; border-radius: 999px; text-transform: uppercase;">Launching Soon</span>
+          </div>
+          <h3 style="margin-bottom: 16px;">Koramangala Mega-Lab</h3>
+          <p style="font-size: 14px; color: var(--gray); margin-bottom: 12px;">#18, 80ft Road, 4th Block, Near Sony World Signal, Koramangala, Bengaluru 560034</p>
+          <a href="coming-soon.html" style="color: var(--orange); font-family: var(--ff-head); font-size: 12px; text-transform: uppercase; text-decoration: none;">Claim Founder 40% Discount &rarr;</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============== VISITOR INFORMATION ============== -->
+  <section class="section section--paper section--wide">
+    <div class="section__head">
+      <div>
+        <p class="eyebrow">VISITOR INFORMATION</p>
+        <h2>Facility Coordinates.</h2>
+      </div>
+    </div>
+
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px;">
+      <div style="background: #fff; padding: 28px; border-radius: var(--radius); border: 1px solid var(--line);">
+        <i class="fa-solid fa-square-parking" style="font-size: 24px; color: var(--orange); margin-bottom: 12px; display: block;"></i>
+        <h4 style="margin-bottom: 8px;">Valet &amp; Bike Parking</h4>
+        <p style="font-size: 14px; color: var(--gray); margin: 0;">Dedicated 2-wheeler bays and complimentary 4-wheeler valet directly at the 100ft road gate.</p>
+      </div>
+
+      <div style="background: #fff; padding: 28px; border-radius: var(--radius); border: 1px solid var(--line);">
+        <i class="fa-solid fa-train-subway" style="font-size: 24px; color: var(--orange); margin-bottom: 12px; display: block;"></i>
+        <h4 style="margin-bottom: 8px;">Metro Proximity</h4>
+        <p style="font-size: 14px; color: var(--gray); margin: 0;">2-minute walk from Indiranagar Metro Station (Purple Line). Opposite Metro Pillar 114.</p>
+      </div>
+
+      <div style="background: #fff; padding: 28px; border-radius: var(--radius); border: 1px solid var(--line);">
+        <i class="fa-solid fa-shower" style="font-size: 24px; color: var(--orange); margin-bottom: 12px; display: block;"></i>
+        <h4 style="margin-bottom: 8px;">Lockers &amp; Showers</h4>
+        <p style="font-size: 14px; color: var(--gray); margin: 0;">60 RFID electronic lockers, pressurized hot showers, fresh towel service, and blowdryers.</p>
+      </div>
+    </div>
+  </section>
+  <!-- ============== FOOTER ============== -->
+  <footer class="ftr">
+
+    <!-- Newsletter CTA Band -->
+    <div class="ftr__cta">
+      <div class="ftr__cta-inner">
+        <div class="ftr__cta-copy">
+          <h3>Stay in the loop.</h3>
+          <p>Training notes, program drops, and Namma Gym news â€” straight to your inbox.</p>
+        </div>
+        <form class="ftr__cta-form" id="footerNewsletterForm">
+          <input type="email" id="footerEmailInput" placeholder="your@email.com" autocomplete="email" />
+          <button type="submit">Join the Dispatch</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Main Footer Body -->
+    <div class="ftr__body">
+      <div class="ftr__main">
+
+        <!-- Brand Block -->
+        <div class="ftr__brand">
+          <span class="hdr__mark"><img src="../assets/logo.png" alt="Namma Gym Logo" /></span>
+          <p class="ftr__brand-name">NAMMA<span>GYM</span></p>
+          <p class="ftr__brand-tagline">Indiranagar's neighbourhood gym since 2014. No shiny lobby. Just iron, grit, and community.</p>
+          <address class="ftr__address" style="font-style: normal;">
+            <strong>Flagship â€” Indiranagar</strong><br />
+            12th Main Road, 100ft Road, Stage 2<br />
+            Bengaluru, Karnataka 560038<br />
+            <strong>Branch â€” Koramangala</strong><br />
+            80 Feet Road, 6th Block<br />
+            Bengaluru, Karnataka 560095
+          </address>
+          <div class="ftr__socials">
+            <a href="#" class="ftr__social-btn" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="ftr__social-btn" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#" class="ftr__social-btn" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="#" class="ftr__social-btn" aria-label="Strava"><i class="fa-brands fa-strava"></i></a>
+          </div>
+        </div>
+
+        <!-- Visit Column -->
+        <div class="ftr__col">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="FAQ.html">FAQ</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Members Column -->
+        <div class="ftr__col">
+          <h4>Members</h4>
+          <ul>
+            <li><a href="../auth/login.html">Member Login</a></li>
+            <li><a href="../auth/signup.html">Join Free Trial</a></li>
+            <li><a href="../auth/user/user-dashboard.html">Member Portal</a></li>
+            <li><a href="../auth/login.html">Reserve a Class</a></li>
+            <li><a href="../auth/login.html">Workout Plans</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Column -->
+        <div class="ftr__col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="tel:+918012345678">+91 80 1234 5678</a></li>
+            <li><a href="mailto:hello@nammagym.in">hello@nammagym.in</a></li>
+            <li><a href="contact.html">Visit the Gym</a></li>
+            <li><a href="Privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="Terms-of-service.html">Terms of Service</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Decorative tags divider -->
+    <div class="ftr__divider">
+      <span class="ftr__tag ftr__tag--accent">Est. 2014</span>
+      <span class="ftr__tag">Strength &amp; Conditioning</span>
+      <span class="ftr__tag">Boxing &amp; MMA</span>
+      <span class="ftr__tag">Hydrotherapy</span>
+      <span class="ftr__tag">Personal Training</span>
+      <span class="ftr__tag">Indiranagar Â· Koramangala</span>
+      <span class="ftr__tag">Open 5 AM â€“ 11 PM</span>
+    </div>
+
+    <!-- Bottom bar -->
+    <div class="ftr__strip">
+      <span>Â© 2026 Namma Gym Pvt. Ltd. Â· Bengaluru, Karnataka</span>
+      <span style="font-family: var(--ff-head); letter-spacing: .1em; font-size: 10px; color: rgba(255,255,255,.12); text-transform: uppercase;">SQUAT Â· BENCH Â· DEADLIFT</span>
+      <span><a href="Privacy-policy.html">Privacy</a> &nbsp;Â·&nbsp; <a href="Terms-of-service.html">Terms</a></span>
+    </div>
+
+  </footer>
+
+  <script src="../js/navbar.js"></script>
+  <script src="../js/form-validation.js"></script>
+  <script src="../js/script.js"></script>
+</body>
+
+</html>

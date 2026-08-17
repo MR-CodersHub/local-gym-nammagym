@@ -1,0 +1,225 @@
+﻿<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>404 — Rep Failed · Namma Gym</title>
+  <meta name="description" content="The page you are looking for has been moved, re-racked, or does not exist." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="icon" href="../assets/logo.png" />
+</head>
+
+<body class="page-public">
+
+  <!-- ============== SHARED NAVBAR ============== -->
+  <header class="hdr">
+    <div class="hdr__row">
+      <a class="hdr__brand" href="../index.html">
+        <span class="hdr__mark">
+          <img src="../assets/logo.png" alt="Namma Gym Logo" />
+        </span>
+        <span class="hdr__name">NAMMA GYM</span>
+      </a>
+
+      <nav class="hdr__nav" aria-label="Primary">
+        <a href="../index.html">Home</a>
+        <a href="home-2.html">Home 2</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="hdr__cta">
+        <button type="button" class="theme-toggle-btn" aria-label="Toggle Theme" title="Switch Light/Dark Mode"><i class="fa-solid fa-sun"></i></button>
+        <button type="button" class="rtl-toggle-btn" aria-label="Toggle RTL layout" title="Switch LTR/RTL">RTL</button>
+
+        <!-- Profile Dropdown -->
+        <div class="profile-dropdown-wrap">
+          <button type="button" class="profile-btn" aria-label="User account and portals" title="Member &amp; Admin Portals"><i class="fa-solid fa-user"></i></button>
+          <div class="profile-menu">
+            <div class="profile-menu__header">
+              <b>Namma Gym Portals</b>
+              <span>Member &amp; Management Access</span>
+            </div>
+            <ul class="profile-menu__links">
+              <li><a href="../auth/login.html"><i class="fa-solid fa-arrow-right-to-bracket text-orange-500"></i><span>Member Login</span></a></li>
+              <li><a href="../auth/signup.html"><i class="fa-solid fa-user-plus text-amber-400"></i><span>Join / Signup</span><span class="profile-menu__badge">Trial</span></a></li>
+              <li><a href="../auth/user/user-dashboard.html"><i class="fa-solid fa-id-card text-emerald-400"></i><span>User Dashboard</span><span class="profile-menu__badge bg-emerald-600">Member</span></a></li>
+              <li><a href="../auth/admin/admin-dashboard.html"><i class="fa-solid fa-shield-halved text-rose-400"></i><span>Admin Dashboard</span><span class="profile-menu__badge bg-rose-600">Staff</span></a></li>
+            </ul>
+          </div>
+        </div>
+
+        <button class="hdr__burger" aria-label="Open menu" aria-expanded="false">&#9776;</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-nav-drawer">
+    <div class="mobile-nav-header">
+      <div class="flex items-center gap-2.5">
+        <span class="w-8 h-8 rounded-full overflow-hidden shadow-md flex items-center justify-center bg-orange-600 shrink-0">
+          <img src="../assets/logo.png" alt="Namma Gym Logo" class="w-full h-full object-cover" />
+        </span>
+        <span class="font-['Anton',sans-serif] text-2xl text-white">NAMMA<span class="text-orange-500">GYM</span></span>
+      </div>
+      <button class="mobile-nav-close text-2xl text-slate-300 hover:text-white">&times;</button>
+    </div>
+    <div class="mobile-nav-links">
+      <a href="../index.html">Home</a>
+      <a href="home-2.html">Home 2</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+
+  <!-- ============== 404 SECTION ============== -->
+  <section class="section" style="min-height: 70vh; display: flex; align-items: center; justify-content: center; text-align: center;">
+    <div style="max-width: 600px; background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 48px; box-shadow: var(--shadow-1);">
+      
+      <div style="width: 72px; height: 72px; border-radius: 50%; background: var(--orange-lt); color: var(--orange); display: flex; align-items: center; justify-content: center; font-size: 32px; margin: 0 auto 20px;">
+        <i class="fa-solid fa-triangle-exclamation"></i>
+      </div>
+
+      <p class="eyebrow" style="margin: 0 auto 12px;">ERROR 404 · FAILED REP</p>
+      <h1 style="font-size: 48px; margin-bottom: 12px; color: var(--navy);">You missed the lift.</h1>
+      <p style="color: var(--gray); font-size: 15px; margin-bottom: 28px;">
+        The barbell dropped or the page you requested was moved to another rack. Let's get you back to the lifting floor.
+      </p>
+
+      <div style="display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; margin-bottom: 32px;">
+        <a href="../index.html" class="btn btn--sm"><i class="fa-solid fa-house mr-1"></i> Return Home</a>
+        <a href="services.html" class="btn btn--sm btn--outline">Explore Disciplines</a>
+      </div>
+
+      <div style="border-top: 1px solid var(--line); padding-top: 20px; font-size: 13px; color: var(--gray);">
+        <span style="font-family: var(--ff-head); text-transform: uppercase; display: block; margin-bottom: 8px; font-size: 11px;">Quick Links:</span>
+        <div style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap;">
+          <a href="pricing.html" style="color: var(--orange); text-decoration: none; font-weight: 600;">Pricing</a>
+          <a href="blog.html" style="color: var(--orange); text-decoration: none; font-weight: 600;">Articles</a>
+          <a href="FAQ.html" style="color: var(--orange); text-decoration: none; font-weight: 600;">FAQ</a>
+          <a href="contact.html" style="color: var(--orange); text-decoration: none; font-weight: 600;">Contact</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- ============== FOOTER ============== -->
+  <footer class="ftr">
+
+    <!-- Newsletter CTA Band -->
+    <div class="ftr__cta">
+      <div class="ftr__cta-inner">
+        <div class="ftr__cta-copy">
+          <h3>Stay in the loop.</h3>
+          <p>Training notes, program drops, and Namma Gym news â€” straight to your inbox.</p>
+        </div>
+        <form class="ftr__cta-form" id="footerNewsletterForm">
+          <input type="email" id="footerEmailInput" placeholder="your@email.com" autocomplete="email" />
+          <button type="submit">Join the Dispatch</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Main Footer Body -->
+    <div class="ftr__body">
+      <div class="ftr__main">
+
+        <!-- Brand Block -->
+        <div class="ftr__brand">
+          <span class="hdr__mark"><img src="../assets/logo.png" alt="Namma Gym Logo" /></span>
+          <p class="ftr__brand-name">NAMMA<span>GYM</span></p>
+          <p class="ftr__brand-tagline">Indiranagar's neighbourhood gym since 2014. No shiny lobby. Just iron, grit, and community.</p>
+          <address class="ftr__address" style="font-style: normal;">
+            <strong>Flagship â€” Indiranagar</strong><br />
+            12th Main Road, 100ft Road, Stage 2<br />
+            Bengaluru, Karnataka 560038<br />
+            <strong>Branch â€” Koramangala</strong><br />
+            80 Feet Road, 6th Block<br />
+            Bengaluru, Karnataka 560095
+          </address>
+          <div class="ftr__socials">
+            <a href="#" class="ftr__social-btn" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="ftr__social-btn" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#" class="ftr__social-btn" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="#" class="ftr__social-btn" aria-label="Strava"><i class="fa-brands fa-strava"></i></a>
+          </div>
+        </div>
+
+        <!-- Visit Column -->
+        <div class="ftr__col">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="FAQ.html">FAQ</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Members Column -->
+        <div class="ftr__col">
+          <h4>Members</h4>
+          <ul>
+            <li><a href="../auth/login.html">Member Login</a></li>
+            <li><a href="../auth/signup.html">Join Free Trial</a></li>
+            <li><a href="../auth/user/user-dashboard.html">Member Portal</a></li>
+            <li><a href="../auth/login.html">Reserve a Class</a></li>
+            <li><a href="../auth/login.html">Workout Plans</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Column -->
+        <div class="ftr__col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="tel:+918012345678">+91 80 1234 5678</a></li>
+            <li><a href="mailto:hello@nammagym.in">hello@nammagym.in</a></li>
+            <li><a href="contact.html">Visit the Gym</a></li>
+            <li><a href="Privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="Terms-of-service.html">Terms of Service</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Decorative tags divider -->
+    <div class="ftr__divider">
+      <span class="ftr__tag ftr__tag--accent">Est. 2014</span>
+      <span class="ftr__tag">Strength &amp; Conditioning</span>
+      <span class="ftr__tag">Boxing &amp; MMA</span>
+      <span class="ftr__tag">Hydrotherapy</span>
+      <span class="ftr__tag">Personal Training</span>
+      <span class="ftr__tag">Indiranagar Â· Koramangala</span>
+      <span class="ftr__tag">Open 5 AM â€“ 11 PM</span>
+    </div>
+
+    <!-- Bottom bar -->
+    <div class="ftr__strip">
+      <span>Â© 2026 Namma Gym Pvt. Ltd. Â· Bengaluru, Karnataka</span>
+      <span style="font-family: var(--ff-head); letter-spacing: .1em; font-size: 10px; color: rgba(255,255,255,.12); text-transform: uppercase;">SQUAT Â· BENCH Â· DEADLIFT</span>
+      <span><a href="Privacy-policy.html">Privacy</a> &nbsp;Â·&nbsp; <a href="Terms-of-service.html">Terms</a></span>
+    </div>
+
+  </footer>
+
+  <script src="../js/navbar.js"></script>
+  <script src="../js/script.js"></script>
+</body>
+
+</html>

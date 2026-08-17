@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Join the Tribe · Member Registration · Namma Gym</title>
+  <meta name="description"
+    content="Create your Namma Gym athlete account. Instant access to class bookings and workout programs." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="icon" href="../assets/logo.png" />
+</head>
+
+<body class="page-public" style="min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 32px 16px; background: var(--paper);">
+
+  <div style="max-width: 960px; width: 100%; background: #fff; border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow-2); display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));">
+    
+    <!-- Left Info Sidebar -->
+    <div style="background: var(--navy); padding: 48px 40px; color: #fff; display: flex; flex-direction: column; justify-content: space-between;">
+      <div>
+        <a href="../index.html" style="color: var(--orange); font-family: var(--ff-head); font-size: 11px; letter-spacing: .08em; text-transform: uppercase; text-decoration: none; display: inline-flex; align-items: center; gap: 6px; margin-bottom: 24px;">
+          <i class="fa-solid fa-arrow-left"></i> Back to Club
+        </a>
+        <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 24px;">
+          <span class="hdr__mark" style="width: 40px; height: 40px;">
+            <img src="../assets/logo.png" alt="Namma Gym Logo" />
+          </span>
+          <span style="font-family: var(--ff-display); font-size: 22px; letter-spacing: .04em;">NAMMA<span style="color:var(--orange)">GYM</span></span>
+        </div>
+        <p class="eyebrow" style="margin-bottom: 12px;">INSTANT REGISTRATION</p>
+        <h2 style="color: #fff; margin-bottom: 16px; line-height: 1.05;">Join the tribe.</h2>
+        <p style="color: #cbd5e1; font-size: 14px; line-height: 1.6; margin-bottom: 24px;">
+          Step into Bengaluru's high-performance community. Unlock your digital member badge, workout tracking, and coaching support.
+        </p>
+      </div>
+      
+      <div style="padding-top: 24px; border-top: 1px solid rgba(255,255,255,0.1); font-family: var(--ff-head); font-size: 11px; color: #a0aab8; letter-spacing: .1em; text-transform: uppercase; margin-top: 32px; position: relative; z-index: 2;">
+        EST. 2014 · INDIRANAGAR · BENGALURU
+      </div>
+    </div>
+
+    <!-- Right Signup Form -->
+    <div style="padding: 48px 40px; background: #fff;">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 28px;">
+        <div>
+          <h2 style="margin: 0; font-size: 32px;">Create Account</h2>
+          <span style="font-size: 13px; color: var(--gray);">Fill out details to activate access.</span>
+        </div>
+        <a href="login.html" style="font-family: var(--ff-head); font-size: 11px; color: var(--orange); text-transform: uppercase; font-weight: 800; text-decoration: none;">Existing? Log In &rarr;</a>
+      </div>
+
+      <form id="signupForm" data-form="signup" novalidate style="display: flex; flex-direction: column; gap: 16px;">
+        <div>
+          <label for="fullName" style="display: block; font-family: var(--ff-head); font-size: 11px; letter-spacing: .06em; text-transform: uppercase; color: var(--navy); margin-bottom: 6px;">Full Name *</label>
+          <input type="text" id="fullName" name="fullName" placeholder="e.g. Maya Shankar" required style="width: 100%; padding: 12px 16px; border-radius: 8px; border: 1px solid var(--line); font-size: 14px; background: var(--paper); outline: none;" />
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px;">
+          <div>
+            <label for="email" style="display: block; font-family: var(--ff-head); font-size: 11px; letter-spacing: .06em; text-transform: uppercase; color: var(--navy); margin-bottom: 6px;">Email Address *</label>
+            <input type="email" id="email" name="email" placeholder="maya@example.com" required style="width: 100%; padding: 12px 16px; border-radius: 8px; border: 1px solid var(--line); font-size: 14px; background: var(--paper); outline: none;" />
+          </div>
+          <div>
+            <label for="phone" style="display: block; font-family: var(--ff-head); font-size: 11px; letter-spacing: .06em; text-transform: uppercase; color: var(--navy); margin-bottom: 6px;">Mobile Number *</label>
+            <input type="tel" id="phone" name="phone" placeholder="+91 98765 43210" required style="width: 100%; padding: 12px 16px; border-radius: 8px; border: 1px solid var(--line); font-size: 14px; background: var(--paper); outline: none;" />
+          </div>
+        </div>
+
+        <div>
+          <label for="planChoice" style="display: block; font-family: var(--ff-head); font-size: 11px; letter-spacing: .06em; text-transform: uppercase; color: var(--navy); margin-bottom: 6px;">Select Membership Tier</label>
+          <select id="planChoice" name="planChoice" style="width: 100%; padding: 12px 16px; border-radius: 8px; border: 1px solid var(--line); font-size: 14px; background: var(--paper); outline: none;">
+            <option value="athletic">Athletic Pass (₹3,499/mo) — Most Popular</option>
+            <option value="trial">1-Day All-Access Trial Pass (₹199)</option>
+            <option value="iron">Iron Floor General Access (₹1,999/mo)</option>
+            <option value="pt">Executive 1-on-1 PT (₹7,999 / 12 Sessions)</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="password" style="display: block; font-family: var(--ff-head); font-size: 11px; letter-spacing: .06em; text-transform: uppercase; color: var(--navy); margin-bottom: 6px;">Create Password *</label>
+          <input type="password" id="password" name="password" placeholder="Minimum 6 characters" required style="width: 100%; padding: 12px 16px; border-radius: 8px; border: 1px solid var(--line); font-size: 14px; background: var(--paper); outline: none;" />
+        </div>
+
+        <div style="font-size: 12px; color: var(--gray);">
+          <label style="display: flex; align-items: center; gap: 8px; cursor: pointer;">
+            <input type="checkbox" id="agreeTerms" required />
+            <span>I agree to the <a href="../pages/Terms-of-service.html" style="color: var(--orange); font-weight: 600;">Terms</a> &amp; <a href="../pages/Privacy-policy.html" style="color: var(--orange); font-weight: 600;">Privacy Policy</a>.</span>
+          </label>
+        </div>
+
+        <button type="submit" class="btn btn--lg" style="width: 100%; margin-top: 6px;">
+          <span>Complete Registration</span> <i class="fa-solid fa-arrow-right text-xs"></i>
+        </button>
+      </form>
+    </div>
+
+  </div>
+
+  <script src="../js/form-validation.js"></script>
+  <script src="../js/navbar.js"></script>
+  <script src="../js/script.js"></script>
+</body>
+
+</html>

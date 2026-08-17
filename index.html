@@ -1,0 +1,598 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Namma Gym — Strength, Conditioning &amp; Boxing in Indiranagar</title>
+  <meta name="description"
+    content="Namma Gym in Indiranagar, Bengaluru. Strength training, conditioning, boxing, MMA, yoga and personal coaching. Memberships from ₹1,999/mo." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="./assets/logo.png">
+</head>
+
+<body class="page-public">
+
+  <!-- ============== SHARED NAVBAR ============== -->
+  <header class="hdr">
+    <div class="hdr__row">
+      <a class="hdr__brand" href="index.html">
+        <span class="hdr__mark">
+          <img src="assets/logo.png" alt="Namma Gym Logo" />
+        </span>
+        <span class="hdr__name">NAMMA GYM</span>
+      </a>
+
+      <nav class="hdr__nav" aria-label="Primary">
+        <a href="index.html" class="is-active">Home</a>
+        <a href="pages/home-2.html">Home 2</a>
+        <a href="pages/about.html">About</a>
+        <a href="pages/services.html">Services</a>
+        <a href="pages/blog.html">Blog</a>
+        <a href="pages/contact.html">Contact</a>
+      </nav>
+
+      <div class="hdr__cta">
+        <button type="button" class="theme-toggle-btn" aria-label="Toggle Theme" title="Switch Light/Dark Mode"><i class="fa-solid fa-sun"></i></button>
+        <button type="button" class="rtl-toggle-btn" aria-label="Toggle RTL layout" title="Switch LTR/RTL">RTL</button>
+
+        <!-- Profile Dropdown -->
+        <div class="profile-dropdown-wrap">
+          <button type="button" class="profile-btn" aria-label="User account and portals" title="Member &amp; Admin Portals"><i class="fa-solid fa-user"></i></button>
+          <div class="profile-menu">
+            <div class="profile-menu__header">
+              <b>Namma Gym Portals</b>
+              <span>Member &amp; Management Access</span>
+            </div>
+            <ul class="profile-menu__links">
+              <li><a href="auth/login.html"><i class="fa-solid fa-arrow-right-to-bracket text-orange-500"></i><span>Member Login</span></a></li>
+              <li><a href="auth/signup.html"><i class="fa-solid fa-user-plus text-amber-400"></i><span>Join / Signup</span><span class="profile-menu__badge">Trial</span></a></li>
+              <li><a href="auth/user/user-dashboard.html"><i class="fa-solid fa-id-card text-emerald-400"></i><span>User Dashboard</span><span class="profile-menu__badge bg-emerald-600">Member</span></a></li>
+              <li><a href="auth/admin/admin-dashboard.html"><i class="fa-solid fa-shield-halved text-rose-400"></i><span>Admin Dashboard</span><span class="profile-menu__badge bg-rose-600">Staff</span></a></li>
+            </ul>
+          </div>
+        </div>
+
+        <button class="hdr__burger" aria-label="Open menu" aria-expanded="false">&#9776;</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-nav-drawer">
+    <div class="mobile-nav-header">
+      <div class="flex items-center gap-2.5">
+        <span class="w-8 h-8 rounded-full overflow-hidden shadow-md flex items-center justify-center bg-orange-600 shrink-0">
+          <img src="assets/logo.png" alt="Namma Gym Logo" class="w-full h-full object-cover" />
+        </span>
+        <span class="font-['Anton',sans-serif] text-2xl text-white">NAMMA<span class="text-orange-500">GYM</span></span>
+      </div>
+      <button class="mobile-nav-close text-2xl text-slate-300 hover:text-white">&times;</button>
+    </div>
+    <div class="mobile-nav-links">
+       <a href="index.html" class="is-active">Home</a>
+        <a href="pages/home-2.html">Home 2</a>
+        <a href="pages/about.html">About</a>
+        <a href="pages/services.html">Services</a>
+        <a href="pages/blog.html">Blog</a>
+        <a href="pages/contact.html">Contact</a>
+    </div>
+  </div>
+
+  <!-- ============== HERO ============== -->
+  <section class="hero" id="home">
+    <!-- Atmospheric sunburst ray overlay -->
+    <div class="hero__rays" aria-hidden="true"></div>
+
+    <div class="hero__inner">
+
+      <!-- Main Copy / Left Headline & CTA -->
+      <div class="hero__copy">
+        <h1 class="hero__title">
+          <span>FUEL BUILD</span>
+          <span>PERFORM.</span>
+        </h1>
+
+        <div class="hero__actions">
+          <a href="#pricing" class="btn btn--hero-primary btn--lg">Start Trial · ₹199</a>
+          <a href="#classes" class="btn btn--hero-outline btn--lg">Explore Classes</a>
+        </div>
+      </div>
+
+      <!-- Bottom-Left Ticker Line -->
+      <div class="hero__ticker">
+        <span class="hero__ticker-text">ATHLETES AND EVERYDAY TRAINERS ARE BEING BUILT HERE · SINCE 2014</span>
+      </div>
+
+      <!-- Bottom-Right Statement Block -->
+      <div class="hero__statement">
+        <p class="hero__statement-text">
+          THE ESSENTIAL<br />
+          INGREDIENT FOR<br />
+          STRONGER BODIES<br />
+          AND LASTING RESULTS
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============== CLASSES (services) ============== -->
+  <section class="section" id="classes">
+    <div class="section__head">
+      <div>
+        <p class="eyebrow">CLASSES DESIGNED FOR YOU</p>
+        <h2>Train your way.</h2>
+      </div>
+    </div>
+
+    <div class="services">
+      <article class="svc">
+        <div class="svc__media">
+          <img src="img/facility-2.jpg" alt="Personal training session" />
+          <div class="svc__badge">01</div>
+        </div>
+        <div class="svc__body">
+          <h3>Personal Training</h3>
+          <p>1-on-1 coaching with a programme written for you. Strength, mobility or physique goals.</p>
+          <ul class="svc__list">
+            <li><b>45-min sessions</b><i>From ₹600</i></li>
+            <li><b>Monthly PT pack</b><i>₹6,999 / 12 sessions</i></li>
+            <li><b>Custom programming</b><i>Updated every 4 weeks</i></li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="svc">
+        <div class="svc__media">
+          <img src="img/group-class.jpg" alt="Group conditioning class" />
+          <div class="svc__badge">02</div>
+        </div>
+        <div class="svc__body">
+          <h3>Group Training</h3>
+          <p>Coach-led classes of 8–14 people. Boxing, conditioning, kettlebell, mobility and strongman.</p>
+          <ul class="svc__list">
+            <li><b>Drop-in class</b><i>Included with membership</i></li>
+            <li><b>30+ classes / week</b><i>5 AM – 9 PM</i></li>
+            <li><b>Reserve from portal</b><i>14 days ahead</i></li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="svc">
+        <div class="svc__media">
+          <img src="img/boxing.jpg" alt="Boxing training session" />
+          <div class="svc__badge">03</div>
+        </div>
+        <div class="svc__body">
+          <h3>Boxing &amp; MMA</h3>
+          <p>Two heavy bags, a 180kg Muay Thai bag, and a 16ft MMA cage. Sparring on Tuesday &amp; Thursday.</p>
+          <ul class="svc__list">
+            <li><b>Fundamentals</b><i>Mon / Wed / Fri · 7 AM</i></li>
+            <li><b>Sparring</b><i>Tue / Thu · 7:30 PM</i></li>
+            <li><b>Cage work</b><i>Fri · 7 PM</i></li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="svc">
+        <div class="svc__media">
+          <img src="img/hero-trainer.jpg" alt="Strength and athletic conditioning class" />
+          <div class="svc__badge">04</div>
+        </div>
+        <div class="svc__body">
+          <h3>Strength &amp; Conditioning</h3>
+          <p>Barbell cycles, kettlebells, turf sprints &amp; athletic conditioning designed for all levels.</p>
+          <ul class="svc__list">
+            <li><b>Hypertrophy</b><i>Tue / Thu · 6 AM</i></li>
+            <li><b>Conditioning Lab</b><i>Mon – Sat · 6 PM</i></li>
+            <li><b>Weekend Grinds</b><i>Sat · 8 AM</i></li>
+          </ul>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============== FACILITIES (image row) ============== -->
+  <section class="section section--wide section--paper" id="facilities">
+    <div class="section__head">
+      <div>
+        <p class="eyebrow">THE FLOOR · 8,200 SQ FT</p>
+        <h2>Built for the work.</h2>
+      </div>
+    </div>
+
+    <div class="services">
+      <article class="svc">
+        <div class="svc__media">
+          <img src="img/facility-1.jpg" alt="Strength hall with squat racks" />
+          <div class="svc__badge">A</div>
+        </div>
+        <div class="svc__body">
+          <h3>Strength Hall</h3>
+          <p>12× Rogue R-4 power racks, 2 competition deadlift platforms, calibrated plates 5–50kg.</p>
+          <ul class="svc__list">
+            <li><b>12 power racks</b><i>with safeties</i></li>
+            <li><b>2 platforms</b><i>for deadlifts</i></li>
+            <li><b>Eleiko + Rogue</b><i>calibrated plates</i></li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="svc">
+        <div class="svc__media">
+          <img src="img/weights.jpg" alt="Dumbbell rack" />
+          <div class="svc__badge">B</div>
+        </div>
+        <div class="svc__body">
+          <h3>Dumbbells · 5–60 kg</h3>
+          <p>Full set, in pairs, in 2.5kg jumps. No waiting for the 30s. Ever.</p>
+          <ul class="svc__list">
+            <li><b>5–60 kg</b><i>2.5 kg jumps</i></li>
+            <li><b>Hex rubber</b><i>commercial grade</i></li>
+            <li><b>7 benches</b><i>flat + adjustable</i></li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="svc">
+        <div class="svc__media">
+          <img src="img/facility-3.jpg" alt="Cardio and conditioning zone" />
+          <div class="svc__badge">C</div>
+        </div>
+        <div class="svc__body">
+          <h3>Cardio · No TVs</h3>
+          <p>Woodway treadmills, Assault bikes, Concept2 rowers, SkiErgs. Bring your own music.</p>
+          <ul class="svc__list">
+            <li><b>4 treadmills</b><i>Woodway</i></li>
+            <li><b>2 rowers</b><i>Concept2</i></li>
+            <li><b>3 SkiErgs</b><i>total-body work</i></li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="svc">
+        <div class="svc__media">
+          <img src="img/boxing.jpg" alt="Combat and MMA cage zone" />
+          <div class="svc__badge">D</div>
+        </div>
+        <div class="svc__body">
+          <h3>Combat &amp; Cage</h3>
+          <p>Full 16ft MMA cage, heavy bags, speedballs, and competition-grade canvas mats.</p>
+          <ul class="svc__list">
+            <li><b>16ft MMA cage</b><i>padded rails</i></li>
+            <li><b>6 heavy bags</b><i>Fairtex bags</i></li>
+            <li><b>Combat mat</b><i>2,000 sq ft</i></li>
+          </ul>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============== TRAINERS ============== -->
+  <section class="section" id="trainers">
+    <div class="section__head">
+      <div>
+        <p class="eyebrow">OUR COACHES</p>
+        <h2>People who count your reps.</h2>
+      </div>
+    </div>
+
+    <div class="trainers">
+      <article class="trainer">
+        <div class="trainer__photo"><img src="img/coach-1.jpg" alt="Coach Arjun Reddy" /></div>
+        <div class="trainer__info">
+          <h3 class="trainer__name">John Mathew</h3>
+          <span class="trainer__role">Head Coach · Powerlifting</span>
+          <p class="trainer__bio">National-level powerlifter, 12 years coaching. Will fix your squat setup before you
+            finish your warm-up.</p>
+          <div class="trainer__spec">
+            <span>Powerlifting</span><span>Programming</span><span>Injury Rehab</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="trainer">
+        <div class="trainer__photo"><img src="img/coach-2.jpg" alt="Coach Priya Shetty" /></div>
+        <div class="trainer__info">
+          <h3 class="trainer__name">Laura Jones</h3>
+          <span class="trainer__role">Boxing Coach · Ex-State Champion</span>
+          <p class="trainer__bio">Eight years competitive boxing. Runs the morning boxing clinic and the evening
+            sparring sessions.</p>
+          <div class="trainer__spec">
+            <span>Boxing</span><span>Sparring</span><span>Footwork</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="trainer">
+        <div class="trainer__photo"><img src="img/coach-3.jpg" alt="Coach Vimal Kumar" /></div>
+        <div class="trainer__info">
+          <h3 class="trainer__name">Anna Christy</h3>
+          <span class="trainer__role">BJJ &amp; MMA Coach</span>
+          <p class="trainer__bio">BJJ purple belt under Atos. Teaches the Tuesday and Thursday no-gi classes plus
+            Saturday open mat.</p>
+          <div class="trainer__spec">
+            <span>BJJ</span><span>MMA</span><span>No-Gi</span>
+          </div>
+        </div>
+      </article>
+
+
+
+    </div>
+  </section>
+
+  <!-- ============== SCHEDULE ============== -->
+  <section class="section section--paper section--wide" id="schedule">
+    <div class="section__head">
+      <div>
+        <p class="eyebrow">THIS WEEK · 17 – 23 AUG</p>
+        <h2>Today's class schedule.</h2>
+      </div>
+    </div>
+
+    <div class="sched-wrap">
+      <div class="sched">
+        <div class="sched__head"><b>TIME</b><i></i></div>
+        <div class="sched__head"><b>MON</b><i>17 Aug</i></div>
+        <div class="sched__head"><b>TUE</b><i>18 Aug</i></div>
+        <div class="sched__head"><b>WED</b><i>19 Aug</i></div>
+        <div class="sched__head"><b>THU</b><i>20 Aug</i></div>
+        <div class="sched__head"><b>FRI</b><i>21 Aug</i></div>
+        <div class="sched__head"><b>SAT</b><i>22 Aug</i></div>
+        <div class="sched__head"><b>SUN</b><i>23 Aug</i></div>
+
+        <div class="sched__row"><time>05:30</time><b>Conditioning</b><i>Ravi</i></div>
+        <div class="sched__row"><time>07:00</time><b>Boxing</b><i>Priya</i></div>
+        <div class="sched__row"><time>09:00</time><b>Strength 101</b><i>Arjun</i></div>
+        <div class="sched__row"><time>17:30</time><b>Powerlifting</b><i>Arjun</i></div>
+        <div class="sched__row"><time>19:00</time><b>BJJ · No-Gi</b><i>Vimal</i></div>
+        <div class="sched__row"><time>06:00</time><b>Yoga</b><i>Deepa</i></div>
+        <div class="sched__row"><time>07:30</time><b>MMA Striking</b><i>Priya</i></div>
+        <div class="sched__row"><time>10:00</time><b>Mobility Lab</b><i>Neha</i></div>
+        <div class="sched__row"><time>18:00</time><b>Olympic Lifting</b><i>Arjun</i></div>
+        <div class="sched__row"><time>19:30</time><b>Sparring</b><i>Priya</i></div>
+        <div class="sched__row"><time>09:00</time><b>Strength 101</b><i>Arjun</i></div>
+        <div class="sched__row"><time>17:30</time><b>Powerlifting</b><i>Arjun</i></div>
+        <div class="sched__row"><time>19:00</time><b>BJJ · No-Gi</b><i>Vimal</i></div>
+        <div class="sched__row"><time>06:00</time><b>Yoga</b><i>Deepa</i></div>
+        <div class="sched__row"><time>05:30</time><b>Conditioning</b><i>Ravi</i></div>
+        <div class="sched__row"><time>07:00</time><b>Boxing</b><i>Priya</i></div>
+      </div>
+    </div>
+
+    <p class="sched__cta"><a href="./auth/login.html" class="btn btn--outline">Reserve a class</a></p>
+  </section>
+
+  <!-- ============== PRICING (orange block) ============== -->
+  <section class="section section--wide section--orange" id="pricing">
+    <div class="section__head">
+      <div>
+        <p class="eyebrow">MEMBERSHIP · NO CONTRACTS</p>
+        <h2>Pick your plan.</h2>
+      </div>
+
+    </div>
+
+    <div class="plans">
+      <article class="plan">
+        <span class="plan__name">Trial Week</span>
+        <p class="plan__price"><b>₹199</b><i>/ 7 days</i></p>
+        <ul class="plan__list">
+          <li>Full floor access · 7 days</li>
+          <li>One free PT intro session</li>
+          <li>All group classes included</li>
+          <li>Locker &amp; hot shower access</li>
+          <li>No card required</li>
+        </ul>
+        <a class="btn btn--white" href="#contact">Start Trial</a>
+      </article>
+
+      <article class="plan plan--featured">
+        <span class="plan__badge">Most picked</span>
+        <span class="plan__name">Monthly</span>
+        <p class="plan__price"><b>₹1,999</b><i>/ month</i></p>
+        <ul class="plan__list">
+          <li>Unlimited floor · 5 AM – 11 PM</li>
+          <li>All group classes</li>
+          <li>One 30-min PT session / month</li>
+          <li>Progress check every 6 weeks</li>
+          <li>Member portal · reservations &amp; plans</li>
+        </ul>
+        <a class="btn" href="#contact">Join Monthly</a>
+      </article>
+
+      <article class="plan">
+        <span class="plan__name">Quarterly</span>
+        <p class="plan__price"><b>₹5,499</b><i>/ 3 months</i></p>
+        <ul class="plan__list">
+          <li>Everything in Monthly</li>
+          <li>Two 30-min PT sessions / month</li>
+          <li>Body composition check monthly</li>
+          <li>Guest pass · 2 / month</li>
+          <li>Save ₹513 vs. monthly</li>
+        </ul>
+        <a class="btn btn--white" href="#contact">Join Quarterly</a>
+      </article>
+    </div>
+
+    <p class="plans__foot">
+      Student discount <b>20% off</b> · Couples <b>15% off</b> · Annual prepay <b>2 months free</b>
+    </p>
+  </section>
+
+  <!-- ============== TESTIMONIALS ============== -->
+  <section class="section">
+    <div class="section__head">
+      <div>
+        <p class="eyebrow">MEMBER STORIES</p>
+        <h2>What people actually say.</h2>
+      </div>
+
+    </div>
+
+    <div class="tests">
+      <article class="test">
+        <div class="test__stars">★★★★★</div>
+        <p class="test__quote">"I joined in March and I'm down 14kg and my squat is up 30kg.
+          Arjun actually reads the programme I send him and tells me when I'm being stupid about volume."</p>
+        <div class="test__person">
+          <div class="test__avatar"><img src="img/avatar-1.jpg" alt="Anika Rao" /></div>
+          <div>
+            <b>Anika Rao</b>
+            <i>Member since 2024 · Strength 101</i>
+          </div>
+        </div>
+      </article>
+
+      <article class="test">
+        <div class="test__stars">★★★★★</div>
+        <p class="test__quote">"Best boxing gym in Indiranagar, no contest. Priya is the real deal —
+          she doesn't let you slack and she doesn't let you injure yourself either."</p>
+        <div class="test__person">
+          <div class="test__avatar"><img src="img/avatar-2.jpg" alt="Karthik Menon" /></div>
+          <div>
+            <b>Karthik Menon</b>
+            <i>Member since 2023 · Boxing</i>
+          </div>
+        </div>
+      </article>
+
+      <article class="test">
+        <div class="test__stars">★★★★★</div>
+        <p class="test__quote">"I travel a lot for work and the ₹1,999 monthly is honest —
+          no contract, no awkward conversation when I don't show up for three weeks. The coaches remember my name."</p>
+        <div class="test__person">
+          <div class="test__avatar"><img src="img/avatar-3.jpg" alt="Sneha Kapoor" /></div>
+          <div>
+            <b>Sneha Kapoor</b>
+            <i>Member since 2022 · Conditioning</i>
+          </div>
+        </div>
+      </article>
+
+      <article class="test">
+        <div class="test__stars">★★★★★</div>
+        <p class="test__quote">"Real equipment, zero influencer nonsense, and people who actually lift heavy. Best
+          atmosphere in Indiranagar to focus and get work done."</p>
+        <div class="test__person">
+          <div class="test__avatar"><img src="img/coach-2.jpg" alt="Rohan Varma" /></div>
+          <div>
+            <b>Rohan Varma</b>
+            <i>Member since 2023 · Powerlifting</i>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============== CTA STRIP ============== -->
+  <section class="cta-strip">
+    <h2>Ready to start?</h2>
+    <p>Trial week is ₹199. No card required. Bring a towel.</p>
+    <a href="#pricing" class="btn btn--lg">Begin Your Trial</a>
+  </section>
+
+  <!-- ============== FOOTER ============== -->
+  <footer class="ftr">
+
+    <!-- Main Footer Body -->
+    <div class="ftr__body">
+      <div class="ftr__main">
+
+        <!-- Brand Block -->
+        <div class="ftr__brand">
+          <span class="hdr__mark"><img src="assets/logo.png" alt="Namma Gym Logo" /></span>
+          <p class="ftr__brand-name">NAMMA<span>GYM</span></p>
+          <p class="ftr__brand-tagline">Indiranagar's neighbourhood gym since 2014. No shiny lobby. Just iron, grit, and community.</p>
+          <address class="ftr__address" style="font-style: normal;">
+            <strong>Flagship — Indiranagar</strong><br />
+            12th Main Road, 100ft Road, Stage 2<br />
+            Bengaluru, Karnataka 560038<br />
+            <strong>Branch — Koramangala</strong><br />
+            80 Feet Road, 6th Block<br />
+            Bengaluru, Karnataka 560095
+          </address>
+          <div class="ftr__socials">
+            <a href="#" class="ftr__social-btn" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="ftr__social-btn" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#" class="ftr__social-btn" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="#" class="ftr__social-btn" aria-label="Strava"><i class="fa-brands fa-strava"></i></a>
+          </div>
+        </div>
+
+        <!-- Visit Column -->
+        <div class="ftr__col">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="pages/about.html">About Us</a></li>
+            <li><a href="pages/services.html">Services</a></li>
+            <li><a href="pages/pricing.html">Pricing</a></li>
+            <li><a href="pages/blog.html">Blog</a></li>
+            <li><a href="pages/FAQ.html">FAQ</a></li>
+            <li><a href="pages/contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Members Column -->
+        <div class="ftr__col">
+          <h4>Members</h4>
+          <ul>
+            <li><a href="auth/login.html">Member Login</a></li>
+            <li><a href="auth/signup.html">Join Free Trial</a></li>
+            <li><a href="auth/user/user-dashboard.html">Member Portal</a></li>
+            <li><a href="auth/login.html">Reserve a Class</a></li>
+            <li><a href="auth/login.html">Workout Plans</a></li>
+            <li><a href="auth/login.html">Attendance Log</a></li>
+          </ul>
+        </div>
+
+        <!-- Follow Column -->
+        <div class="ftr__col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="tel:+918012345678">+91 80 1234 5678</a></li>
+            <li><a href="mailto:hello@nammagym.in">hello@nammagym.in</a></li>
+            <li><a href="pages/contact.html">Visit the Gym</a></li>
+            <li><a href="pages/Privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="pages/Terms-of-service.html">Terms of Service</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Decorative tags divider -->
+    <div class="ftr__divider">
+      <span class="ftr__tag ftr__tag--accent">Est. 2014</span>
+      <span class="ftr__tag">Strength &amp; Conditioning</span>
+      <span class="ftr__tag">Boxing &amp; MMA</span>
+      <span class="ftr__tag">Hydrotherapy</span>
+      <span class="ftr__tag">Personal Training</span>
+      <span class="ftr__tag">Indiranagar · Koramangala</span>
+      <span class="ftr__tag">Open 5 AM – 11 PM</span>
+    </div>
+
+    <!-- Bottom bar -->
+    <div class="ftr__strip">
+      <span>© 2026 Namma Gym Pvt. Ltd. · Bengaluru, Karnataka</span>
+      <span style="font-family: var(--ff-head); letter-spacing: .1em; font-size: 10px; color: rgba(255,255,255,.12); text-transform: uppercase;">SQUAT · BENCH · DEADLIFT</span>
+      <span><a href="pages/Privacy-policy.html">Privacy</a> &nbsp;·&nbsp; <a href="pages/Terms-of-service.html">Terms</a></span>
+    </div>
+
+  </footer>
+
+  <script src="js/form-validation.js"></script>
+  <script src="js/navbar.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,431 @@
+﻿<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Membership Pricing &amp; Passes · Namma Gym</title>
+  <meta name="description"
+    content="Transparent fitness memberships with zero initiation fees. Choose Monthly, Annual, or Personal Coaching packages in Indiranagar, Bengaluru." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="icon" href="../assets/logo.png" />
+</head>
+
+<body class="page-public">
+
+  <!-- ============== SHARED NAVBAR ============== -->
+  <header class="hdr">
+    <div class="hdr__row">
+      <a class="hdr__brand" href="../index.html">
+        <span class="hdr__mark">
+          <img src="../assets/logo.png" alt="Namma Gym Logo" />
+        </span>
+        <span class="hdr__name">NAMMA GYM</span>
+      </a>
+
+      <nav class="hdr__nav" aria-label="Primary">
+        <a href="../index.html">Home</a>
+        <a href="home-2.html">Home 2</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="hdr__cta">
+        <button type="button" class="theme-toggle-btn" aria-label="Toggle Theme" title="Switch Light/Dark Mode"><i class="fa-solid fa-sun"></i></button>
+        <button type="button" class="rtl-toggle-btn" aria-label="Toggle RTL layout" title="Switch LTR/RTL">RTL</button>
+
+        <!-- Profile Dropdown -->
+        <div class="profile-dropdown-wrap">
+          <button type="button" class="profile-btn" aria-label="User account and portals" title="Member &amp; Admin Portals"><i class="fa-solid fa-user"></i></button>
+          <div class="profile-menu">
+            <div class="profile-menu__header">
+              <b>Namma Gym Portals</b>
+              <span>Member &amp; Management Access</span>
+            </div>
+            <ul class="profile-menu__links">
+              <li><a href="../auth/login.html"><i class="fa-solid fa-arrow-right-to-bracket text-orange-500"></i><span>Member Login</span></a></li>
+              <li><a href="../auth/signup.html"><i class="fa-solid fa-user-plus text-amber-400"></i><span>Join / Signup</span><span class="profile-menu__badge">Trial</span></a></li>
+              <li><a href="../auth/user/user-dashboard.html"><i class="fa-solid fa-id-card text-emerald-400"></i><span>User Dashboard</span><span class="profile-menu__badge bg-emerald-600">Member</span></a></li>
+              <li><a href="../auth/admin/admin-dashboard.html"><i class="fa-solid fa-shield-halved text-rose-400"></i><span>Admin Dashboard</span><span class="profile-menu__badge bg-rose-600">Staff</span></a></li>
+            </ul>
+          </div>
+        </div>
+
+        <button class="hdr__burger" aria-label="Open menu" aria-expanded="false">&#9776;</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-nav-drawer">
+    <div class="mobile-nav-header">
+      <div class="flex items-center gap-2.5">
+        <span class="w-8 h-8 rounded-full overflow-hidden shadow-md flex items-center justify-center bg-orange-600 shrink-0">
+          <img src="../assets/logo.png" alt="Namma Gym Logo" class="w-full h-full object-cover" />
+        </span>
+        <span class="font-['Anton',sans-serif] text-2xl text-white">NAMMA<span class="text-orange-500">GYM</span></span>
+      </div>
+      <button class="mobile-nav-close text-2xl text-slate-300 hover:text-white">&times;</button>
+    </div>
+    <div class="mobile-nav-links">
+      <a href="../index.html">Home</a>
+      <a href="home-2.html">Home 2</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+
+  <!-- ============== PAGE HERO ============== -->
+  <section class="page-hero">
+    <div class="page-hero__inner">
+      <p class="eyebrow">TRANSPARENT VALUE · NO CONTRACTS</p>
+      <h1>Membership Plans.</h1>
+      <p>
+        Zero admission fees. Zero cancellation penalties. Choose the plan that aligns with your athletic ambition.
+      </p>
+
+      <!-- Monthly / Annual Switcher -->
+      <div style="display: inline-flex; align-items: center; gap: 14px; background: rgba(255,255,255,0.08); padding: 8px 18px; border-radius: 999px; border: 1px solid rgba(255,255,255,0.18); margin-top: 28px;">
+        <span style="font-family: var(--ff-head); font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: #fff;">Billed Monthly</span>
+        <label style="position: relative; display: inline-flex; align-items: center; cursor: pointer;">
+          <input type="checkbox" class="pricing-billing-toggle" style="display: none;" />
+          <div class="toggle-slider" style="width: 44px; height: 24px; background: rgba(0,0,0,0.5); border-radius: 999px; position: relative; transition: background .2s;">
+            <div style="width: 18px; height: 18px; background: var(--orange); border-radius: 50%; position: absolute; top: 3px; left: 3px; transition: transform .2s;"></div>
+          </div>
+        </label>
+        <span style="font-family: var(--ff-head); font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--orange); display: flex; align-items: center; gap: 6px;">
+          Annual <span style="background: var(--orange); color: #fff; font-size: 10px; padding: 2px 8px; border-radius: 999px;">Save 35%</span>
+        </span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== 3 CORE MEMBERSHIP TIERS ============== -->
+  <section class="section section--wide section--orange" id="plans">
+    <div class="section__head">
+      <div>
+        <p class="eyebrow" style="color: #fff;">MEMBERSHIP · ALL ACCESS</p>
+        <h2>Pick your plan.</h2>
+      </div>
+    </div>
+
+    <div class="plans">
+      <article class="plan">
+        <span class="plan__name">Iron Floor</span>
+        <p class="plan__price"><b data-price-monthly="₹1,999" data-price-annual="₹15,999">₹1,999</b><i class="price-period">/ month</i></p>
+        <ul class="plan__list">
+          <li>Full Open Gym Floor Access</li>
+          <li>Eleiko &amp; Texas Power Barbells</li>
+          <li>Digital RFID Locker &amp; Shower</li>
+          <li>InBody Composition Screening</li>
+          <li>No card required to start</li>
+        </ul>
+        <a class="btn btn--white" href="../auth/signup.html">Select Iron Floor</a>
+      </article>
+
+      <article class="plan plan--featured">
+        <span class="plan__badge">Most Popular</span>
+        <span class="plan__name">Athletic Pass</span>
+        <p class="plan__price"><b data-price-monthly="₹3,499" data-price-annual="₹26,999">₹3,499</b><i class="price-period">/ month</i></p>
+        <ul class="plan__list">
+          <li>Full Open Gym + Combat Octagon</li>
+          <li>Unlimited Strength &amp; Boxing Classes</li>
+          <li>Daily Sauna &amp; 3°C Cold Plunge</li>
+          <li>Monthly InBody 570 Scan</li>
+          <li>14-Day Advance Class Booking</li>
+        </ul>
+        <a class="btn" href="../auth/signup.html">Join Athletic Pass</a>
+      </article>
+
+      <article class="plan">
+        <span class="plan__name">Executive PT</span>
+        <p class="plan__price"><b>₹7,999</b><i>/ 12 sessions</i></p>
+        <ul class="plan__list">
+          <li>12 x 60-min 1-on-1 Sessions</li>
+          <li>FMS Biomechanics &amp; Mobility</li>
+          <li>Custom Nutrition &amp; Macros</li>
+          <li>Direct 24/7 Coach Portal Chat</li>
+          <li>Full Athletic Pass Included</li>
+        </ul>
+        <a class="btn btn--white" href="../auth/signup.html">Apply for Coaching</a>
+      </article>
+    </div>
+
+    <p class="plans__foot">
+      Student discount <b>20% off</b> · Couples <b>15% off</b> · Annual prepay <b>2 months free</b>
+    </p>
+  </section>
+
+  <!-- ============== 1-DAY TRIAL STRIP ============== -->
+  <section class="section">
+    <div style="background: var(--navy); color: #fff; padding: 48px; border-radius: var(--radius); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 24px;">
+      <div>
+        <span style="font-family: var(--ff-head); font-size: 12px; color: var(--orange); letter-spacing: .15em; text-transform: uppercase; display: block; margin-bottom: 6px;">NO STRINGS ATTACHED</span>
+        <h3 style="color: #fff; margin-bottom: 8px;">1-Day All-Access Trial Pass · ₹199</h3>
+        <p style="color: #c9d2dd; font-size: 15px; margin: 0; max-width: 580px;">Want to test the barbell platforms, take a boxing session with Coach Arjun, and try the 3°C cold plunge before committing? Grab a trial pass today.</p>
+      </div>
+      <a href="../auth/signup.html" class="btn btn--lg">Get ₹199 Trial Pass</a>
+    </div>
+  </section>
+
+  <!-- ============== COMPARISON MATRIX ============== -->
+  <section class="section section--paper section--wide">
+    <div class="section__head">
+      <div>
+        <p class="eyebrow">DETAILED BREAKDOWN</p>
+        <h2>Plan Comparison Matrix.</h2>
+      </div>
+    </div>
+
+    <div style="overflow-x: auto; background: #fff; border-radius: var(--radius); border: 1px solid var(--line); box-shadow: var(--shadow-1);">
+      <table style="width: 100%; border-collapse: collapse; text-align: left; font-size: 14px;">
+        <thead>
+          <tr style="background: var(--navy); color: #fff; font-family: var(--ff-head); font-size: 13px; text-transform: uppercase;">
+            <th style="padding: 18px 24px;">Facility &amp; Program Features</th>
+            <th style="padding: 18px 24px; text-align: center;">Iron Floor (₹1,999)</th>
+            <th style="padding: 18px 24px; text-align: center; color: var(--orange);">Athletic Pass (₹3,499)</th>
+            <th style="padding: 18px 24px; text-align: center;">Executive PT (₹7,999)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="border-bottom: 1px solid var(--line);">
+            <td style="padding: 16px 24px; font-weight: 600; color: var(--navy);">Eleiko Barbells &amp; Power Racks</td>
+            <td style="padding: 16px 24px; text-align: center; color: #10b981;"><i class="fa-solid fa-check"></i></td>
+            <td style="padding: 16px 24px; text-align: center; color: #10b981;"><i class="fa-solid fa-check"></i></td>
+            <td style="padding: 16px 24px; text-align: center; color: #10b981;"><i class="fa-solid fa-check"></i></td>
+          </tr>
+          <tr style="border-bottom: 1px solid var(--line);">
+            <td style="padding: 16px 24px; font-weight: 600; color: var(--navy);">Coach-Led Barbell &amp; S&amp;C Classes</td>
+            <td style="padding: 16px 24px; text-align: center; color: var(--gray-lt);"><i class="fa-solid fa-minus"></i></td>
+            <td style="padding: 16px 24px; text-align: center; color: #10b981; font-weight: 700;">Unlimited</td>
+            <td style="padding: 16px 24px; text-align: center; color: #10b981; font-weight: 700;">Included</td>
+          </tr>
+          <tr style="border-bottom: 1px solid var(--line);">
+            <td style="padding: 16px 24px; font-weight: 600; color: var(--navy);">Combat Lab, Octagon &amp; Sparring</td>
+            <td style="padding: 16px 24px; text-align: center; color: var(--gray-lt);"><i class="fa-solid fa-minus"></i></td>
+            <td style="padding: 16px 24px; text-align: center; color: #10b981; font-weight: 700;">Included</td>
+            <td style="padding: 16px 24px; text-align: center; color: #10b981; font-weight: 700;">Included</td>
+          </tr>
+          <tr style="border-bottom: 1px solid var(--line);">
+            <td style="padding: 16px 24px; font-weight: 600; color: var(--navy);">Sauna (85°C) &amp; Cold Plunge (3°C)</td>
+            <td style="padding: 16px 24px; text-align: center; color: var(--gray-lt);"><i class="fa-solid fa-minus"></i></td>
+            <td style="padding: 16px 24px; text-align: center; color: #10b981; font-weight: 700;">Daily Access</td>
+            <td style="padding: 16px 24px; text-align: center; color: #10b981; font-weight: 700;">Daily Access</td>
+          </tr>
+          <tr style="border-bottom: 1px solid var(--line);">
+            <td style="padding: 16px 24px; font-weight: 600; color: var(--navy);">1-on-1 Dedicated Master Coach</td>
+            <td style="padding: 16px 24px; text-align: center; color: var(--gray-lt);"><i class="fa-solid fa-minus"></i></td>
+            <td style="padding: 16px 24px; text-align: center; color: var(--gray-lt);"><i class="fa-solid fa-minus"></i></td>
+            <td style="padding: 16px 24px; text-align: center; color: var(--orange); font-weight: 700;">12 Sessions</td>
+          </tr>
+          <tr style="border-bottom: 1px solid var(--line);">
+            <td style="padding: 16px 24px; font-weight: 600; color: var(--navy);">InBody 570 Composition Scans</td>
+            <td style="padding: 16px 24px; text-align: center; color: var(--gray);">₹500 / scan</td>
+            <td style="padding: 16px 24px; text-align: center; color: #10b981; font-weight: 700;">Monthly Free</td>
+            <td style="padding: 16px 24px; text-align: center; color: #10b981; font-weight: 700;">Weekly Free</td>
+          </tr>
+          <tr>
+            <td style="padding: 16px 24px; font-weight: 600; color: var(--navy);">Membership Freeze Allowed</td>
+            <td style="padding: 16px 24px; text-align: center; color: var(--gray);">Annual only</td>
+            <td style="padding: 16px 24px; text-align: center; color: #10b981; font-weight: 700;">30 Days/Year</td>
+            <td style="padding: 16px 24px; text-align: center; color: #10b981; font-weight: 700;">60 Days/Year</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ============== PRICING FAQS ============== -->
+  <section class="section">
+    <div class="section__head">
+      <div>
+        <p class="eyebrow">COMMON QUESTIONS</p>
+        <h2>Pricing FAQs.</h2>
+      </div>
+    </div>
+
+    <div class="faq-accordion">
+      <div class="faq-item is-active">
+        <button class="faq-trigger" type="button">
+          <span>Are there any registration or admission fees?</span>
+          <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+        </button>
+        <div class="faq-content">
+          No. We believe in 100% transparent pricing. You pay only the subscription fee listed above—no admission fees, locker fees, or equipment maintenance surcharges.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-trigger" type="button">
+          <span>How does billing and cancellation work?</span>
+          <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+        </button>
+        <div class="faq-content">
+          Monthly memberships recur automatically on UPI/Card and can be cancelled with 1-click in your Member Dashboard anytime before your next billing date.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-trigger" type="button">
+          <span>Can I freeze my membership while traveling?</span>
+          <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+        </button>
+        <div class="faq-content">
+          Yes. Athletic Pass members can freeze up to 30 days per year, and Executive PT members up to 60 days per year directly from the online member dashboard.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== CTA STRIP ============== -->
+  <section class="cta-strip">
+    <h2>Ready to join the tribe?</h2>
+    <p>Trial week is ₹199. No card required. Bring a towel.</p>
+    <a href="../auth/signup.html" class="btn btn--lg">Begin Your Trial</a>
+  </section>
+  <!-- ============== FOOTER ============== -->
+  <footer class="ftr">
+
+    <!-- Newsletter CTA Band -->
+    <div class="ftr__cta">
+      <div class="ftr__cta-inner">
+        <div class="ftr__cta-copy">
+          <h3>Stay in the loop.</h3>
+          <p>Training notes, program drops, and Namma Gym news â€” straight to your inbox.</p>
+        </div>
+        <form class="ftr__cta-form" id="footerNewsletterForm">
+          <input type="email" id="footerEmailInput" placeholder="your@email.com" autocomplete="email" />
+          <button type="submit">Join the Dispatch</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Main Footer Body -->
+    <div class="ftr__body">
+      <div class="ftr__main">
+
+        <!-- Brand Block -->
+        <div class="ftr__brand">
+          <span class="hdr__mark"><img src="../assets/logo.png" alt="Namma Gym Logo" /></span>
+          <p class="ftr__brand-name">NAMMA<span>GYM</span></p>
+          <p class="ftr__brand-tagline">Indiranagar's neighbourhood gym since 2014. No shiny lobby. Just iron, grit, and community.</p>
+          <address class="ftr__address" style="font-style: normal;">
+            <strong>Flagship â€” Indiranagar</strong><br />
+            12th Main Road, 100ft Road, Stage 2<br />
+            Bengaluru, Karnataka 560038<br />
+            <strong>Branch â€” Koramangala</strong><br />
+            80 Feet Road, 6th Block<br />
+            Bengaluru, Karnataka 560095
+          </address>
+          <div class="ftr__socials">
+            <a href="#" class="ftr__social-btn" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="ftr__social-btn" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#" class="ftr__social-btn" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="#" class="ftr__social-btn" aria-label="Strava"><i class="fa-brands fa-strava"></i></a>
+          </div>
+        </div>
+
+        <!-- Visit Column -->
+        <div class="ftr__col">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="FAQ.html">FAQ</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Members Column -->
+        <div class="ftr__col">
+          <h4>Members</h4>
+          <ul>
+            <li><a href="../auth/login.html">Member Login</a></li>
+            <li><a href="../auth/signup.html">Join Free Trial</a></li>
+            <li><a href="../auth/user/user-dashboard.html">Member Portal</a></li>
+            <li><a href="../auth/login.html">Reserve a Class</a></li>
+            <li><a href="../auth/login.html">Workout Plans</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Column -->
+        <div class="ftr__col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="tel:+918012345678">+91 80 1234 5678</a></li>
+            <li><a href="mailto:hello@nammagym.in">hello@nammagym.in</a></li>
+            <li><a href="contact.html">Visit the Gym</a></li>
+            <li><a href="Privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="Terms-of-service.html">Terms of Service</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Decorative tags divider -->
+    <div class="ftr__divider">
+      <span class="ftr__tag ftr__tag--accent">Est. 2014</span>
+      <span class="ftr__tag">Strength &amp; Conditioning</span>
+      <span class="ftr__tag">Boxing &amp; MMA</span>
+      <span class="ftr__tag">Hydrotherapy</span>
+      <span class="ftr__tag">Personal Training</span>
+      <span class="ftr__tag">Indiranagar Â· Koramangala</span>
+      <span class="ftr__tag">Open 5 AM â€“ 11 PM</span>
+    </div>
+
+    <!-- Bottom bar -->
+    <div class="ftr__strip">
+      <span>Â© 2026 Namma Gym Pvt. Ltd. Â· Bengaluru, Karnataka</span>
+      <span style="font-family: var(--ff-head); letter-spacing: .1em; font-size: 10px; color: rgba(255,255,255,.12); text-transform: uppercase;">SQUAT Â· BENCH Â· DEADLIFT</span>
+      <span><a href="Privacy-policy.html">Privacy</a> &nbsp;Â·&nbsp; <a href="Terms-of-service.html">Terms</a></span>
+    </div>
+
+  </footer>
+
+  <script src="../js/navbar.js"></script>
+  <script src="../js/form-validation.js"></script>
+  <script src="../js/script.js"></script>
+  <script>
+    // FAQ Accordion click handler
+    document.querySelectorAll('.faq-trigger').forEach(trigger => {
+      trigger.addEventListener('click', () => {
+        const item = trigger.closest('.faq-item');
+        const isActive = item.classList.contains('is-active');
+        document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('is-active'));
+        if (!isActive) {
+          item.classList.add('is-active');
+        }
+      });
+    });
+
+    // Toggle switch handler
+    const toggle = document.querySelector('.pricing-billing-toggle');
+    if (toggle) {
+      toggle.addEventListener('change', (e) => {
+        const isAnnual = e.target.checked;
+        const knob = e.target.nextElementSibling.firstElementChild;
+        if (isAnnual) {
+          knob.style.transform = 'translateX(20px)';
+        } else {
+          knob.style.transform = 'translateX(0)';
+        }
+      });
+    }
+  </script>
+</body>
+
+</html>

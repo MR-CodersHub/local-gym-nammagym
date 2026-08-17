@@ -1,0 +1,533 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Combat &amp; Athletic Lab · Namma Gym Bangalore</title>
+  <meta name="description"
+    content="Namma Gym Combat &amp; Athletic Performance Lab. Specialized in Muay Thai, boxing, MMA, and raw barbell power." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="icon" href="../assets/logo.png" />
+</head>
+
+<body class="page-public">
+
+  <!-- ============== SHARED NAVBAR ============== -->
+  <header class="hdr">
+    <div class="hdr__row">
+      <a class="hdr__brand" href="../index.html">
+        <span class="hdr__mark">
+          <img src="../assets/logo.png" alt="Namma Gym Logo" />
+        </span>
+        <span class="hdr__name">NAMMA GYM</span>
+      </a>
+
+      <nav class="hdr__nav" aria-label="Primary">
+        <a href="../index.html">Home</a>
+        <a href="home-2.html" class="is-active">Home 2</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="hdr__cta">
+        <button type="button" class="theme-toggle-btn" aria-label="Toggle Theme" title="Switch Light/Dark Mode"><i class="fa-solid fa-sun"></i></button>
+        <button type="button" class="rtl-toggle-btn" aria-label="Toggle RTL layout" title="Switch LTR/RTL">RTL</button>
+
+        <!-- Profile Dropdown -->
+        <div class="profile-dropdown-wrap">
+          <button type="button" class="profile-btn" aria-label="User account and portals" title="Member &amp; Admin Portals"><i class="fa-solid fa-user"></i></button>
+          <div class="profile-menu">
+            <div class="profile-menu__header">
+              <b>Namma Gym Portals</b>
+              <span>Member &amp; Management Access</span>
+            </div>
+            <ul class="profile-menu__links">
+              <li><a href="../auth/login.html"><i class="fa-solid fa-arrow-right-to-bracket text-orange-500"></i><span>Member Login</span></a></li>
+              <li><a href="../auth/signup.html"><i class="fa-solid fa-user-plus text-amber-400"></i><span>Join / Signup</span><span class="profile-menu__badge">Trial</span></a></li>
+              <li><a href="../auth/user/user-dashboard.html"><i class="fa-solid fa-id-card text-emerald-400"></i><span>User Dashboard</span><span class="profile-menu__badge bg-emerald-600">Member</span></a></li>
+              <li><a href="../auth/admin/admin-dashboard.html"><i class="fa-solid fa-shield-halved text-rose-400"></i><span>Admin Dashboard</span><span class="profile-menu__badge bg-rose-600">Staff</span></a></li>
+            </ul>
+          </div>
+        </div>
+
+        <button class="hdr__burger" aria-label="Open menu" aria-expanded="false">&#9776;</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-nav-drawer">
+    <div class="mobile-nav-header">
+      <div class="flex items-center gap-2.5">
+        <span class="w-8 h-8 rounded-full overflow-hidden shadow-md flex items-center justify-center bg-orange-600 shrink-0">
+          <img src="../assets/logo.png" alt="Namma Gym Logo" class="w-full h-full object-cover" />
+        </span>
+        <span class="font-['Anton',sans-serif] text-2xl text-white">NAMMA<span class="text-orange-500">GYM</span></span>
+      </div>
+      <button class="mobile-nav-close text-2xl text-slate-300 hover:text-white">&times;</button>
+    </div>
+    <div class="mobile-nav-links">
+      <a href="../index.html">Home</a>
+      <a href="home-2.html" class="is-active">Home 2</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+
+
+  <!-- ============== HERO — CINEMATIC FULL VIEWPORT (ORANGE THEME) ============== -->
+  <section id="home" class="hero-orange-theme" style="
+    position: relative;
+    background: linear-gradient(155deg, #FF7744 0%, #FF5A1F 45%, #E64910 100%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+  ">
+
+    <!-- Subtle grain texture overlay -->
+    <div aria-hidden="true" style="
+      position: absolute; inset: 0;
+      background: url('data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22200%22 height=%22200%22><filter id=%22n%22><feTurbulence type=%22fractalNoise%22 baseFrequency=%220.65%22 stitchTiles=%22stitch%22/></filter><rect width=%22200%22 height=%22200%22 filter=%22url(%23n)%22 opacity=%220.06%22/></svg>');
+      pointer-events: none; z-index: 0;
+    "></div>
+
+    <!-- Radiant lighting overlay behind headline -->
+    <div aria-hidden="true" style="
+      position: absolute;
+      top: 30%; left: 50%;
+      transform: translate(-50%, -50%);
+      width: 900px; height: 500px;
+      background: radial-gradient(ellipse, rgba(255,255,255,.18) 0%, transparent 70%);
+      pointer-events: none; z-index: 0;
+    "></div>
+
+    <!-- Main hero content -->
+    <div style="
+      position: relative;
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 120px 24px 60px;
+      flex: 1;
+    ">
+
+      <!-- Eyebrow badge -->
+      <div style="
+        display: inline-flex; align-items: center; gap: 8px;
+        background: rgba(0, 0, 0, 0.22);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.35);
+        color: #ffffff;
+        font-family: var(--ff-head); font-size: 11px;
+        padding: 7px 20px; border-radius: 999px;
+        text-transform: uppercase; letter-spacing: .14em;
+        margin-bottom: 36px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      ">
+        <i class="fa-solid fa-hand-fist text-white"></i>
+        <span>Combat &amp; Athletic Performance Lab · Bengaluru</span>
+      </div>
+
+      <!-- Massive headline -->
+      <h1 style="
+        font-family: var(--ff-display);
+        font-size: clamp(3.5rem, 12vw, 10rem);
+        line-height: .92;
+        letter-spacing: -.02em;
+        color: #ffffff;
+        text-transform: uppercase;
+        margin: 0 0 32px;
+        max-width: 1300px;
+        text-shadow: 0 4px 30px rgba(0,0,0,0.18);
+      ">
+        UNLEASH YOUR<br />POTENTIAL.
+      </h1>
+
+      <!-- Subtitle -->
+      <p style="
+        font-size: clamp(15px, 2vw, 18px);
+        color: rgba(255, 255, 255, 0.95);
+        max-width: 58ch;
+        line-height: 1.65;
+        margin: 0 0 44px;
+        font-weight: 500;
+        text-shadow: 0 2px 8px rgba(0,0,0,0.15);
+      ">
+        At Namma Gym, we blend raw barbell power with the art of combat sports. Our programs are engineered to sharpen your skills, build functional strength, and elevate your overall performance.
+      </p>
+
+      <!-- CTA row -->
+      <div style="display: flex; gap: 14px; flex-wrap: wrap; justify-content: center;">
+        <a href="services.html" style="
+          display: inline-flex; align-items: center; gap: 10px;
+          background: var(--navy); color: #ffffff;
+          font-family: var(--ff-head); font-size: 14px;
+          text-transform: uppercase; letter-spacing: .06em;
+          padding: 16px 38px; border-radius: 999px;
+          text-decoration: none; font-weight: 800;
+          transition: transform .15s ease, background .2s ease, color .2s ease, box-shadow .2s ease;
+          border: 2px solid var(--navy);
+          box-shadow: 0 8px 24px rgba(15, 30, 46, 0.3);
+        " onmouseover="this.style.background='#ffffff';this.style.color='var(--navy)';this.style.borderColor='#ffffff';this.style.transform='translateY(-2px)';" onmouseout="this.style.background='var(--navy)';this.style.color='#ffffff';this.style.borderColor='var(--navy)';this.style.transform='translateY(0)';">
+          Get Started
+        </a>
+        <a href="pricing.html" style="
+          display: inline-flex; align-items: center; gap: 10px;
+          background: rgba(255,255,255,0.15); color: #ffffff;
+          backdrop-filter: blur(8px);
+          font-family: var(--ff-head); font-size: 14px;
+          text-transform: uppercase; letter-spacing: .06em;
+          padding: 16px 38px; border-radius: 999px;
+          text-decoration: none; font-weight: 800;
+          transition: transform .15s ease, background .2s ease, color .2s ease, border-color .2s ease;
+          border: 2px solid rgba(255,255,255,0.8);
+        " onmouseover="this.style.background='#ffffff';this.style.color='var(--orange)';this.style.borderColor='#ffffff';this.style.transform='translateY(-2px)';" onmouseout="this.style.background='rgba(255,255,255,0.15)';this.style.color='#ffffff';this.style.borderColor='rgba(255,255,255,0.8)';this.style.transform='translateY(0)';">
+          Trial Pass · ₹199
+        </a>
+      </div>
+
+      <!-- Scroll indicator -->
+      <div style="margin-top: 52px; display: flex; flex-direction: column; align-items: center; gap: 8px; opacity: .75;">
+        <span style="font-family: var(--ff-head); font-size: 10px; color: #ffffff; letter-spacing: .16em; text-transform: uppercase; font-weight: bold;">Scroll</span>
+        <div style="width: 2px; height: 38px; background: linear-gradient(to bottom, #ffffff, transparent);"></div>
+      </div>
+    </div>
+
+    <!-- Photo strip — 3 panels peeking from bottom -->
+    <div style="
+      position: relative;
+      z-index: 2;
+      display: grid;
+      grid-template-columns: 1fr 1.4fr 1fr;
+      gap: 12px;
+      padding: 0 20px;
+      max-width: 1400px;
+      margin: 0 auto;
+      width: 100%;
+    ">
+      <div style="
+        height: 260px;
+        border-radius: 16px 16px 0 0;
+        overflow: hidden;
+        position: relative;
+        box-shadow: 0 -8px 24px rgba(0,0,0,0.18);
+        border-top: 2px solid rgba(255,255,255,0.25);
+        border-left: 2px solid rgba(255,255,255,0.25);
+        border-right: 2px solid rgba(255,255,255,0.25);
+      ">
+        <img src="../img/boxing.jpg" alt="Boxing training at Namma Gym" style="width: 100%; height: 100%; object-fit: cover; filter: brightness(.9) contrast(1.05);" />
+        <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(15,30,46,.8), transparent);"></div>
+        <div style="position: absolute; bottom: 20px; left: 20px;">
+          <span style="font-family: var(--ff-head); font-size: 10px; color: #ffffff; background: rgba(0,0,0,0.5); padding: 4px 10px; border-radius: 999px; text-transform: uppercase; letter-spacing: .12em; border: 1px solid rgba(255,255,255,0.2);">Boxing &amp; MMA</span>
+        </div>
+      </div>
+
+      <div style="
+        height: 300px;
+        border-radius: 16px 16px 0 0;
+        overflow: hidden;
+        position: relative;
+        margin-top: -40px;
+        box-shadow: 0 -12px 32px rgba(0,0,0,0.25);
+        border-top: 3px solid rgba(255,255,255,0.4);
+        border-left: 2px solid rgba(255,255,255,0.3);
+        border-right: 2px solid rgba(255,255,255,0.3);
+      ">
+        <img src="../img/hero-athlete-full.jpg" alt="Elite athlete training at Namma Gym" style="width: 100%; height: 100%; object-fit: cover; object-position: top; filter: brightness(.85) contrast(1.1);" />
+        <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(15,30,46,.85), transparent 50%);"></div>
+        <div style="position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); white-space: nowrap;">
+          <span style="font-family: var(--ff-head); font-size: 11px; color: #ffffff; background: var(--navy); padding: 5px 14px; border-radius: 999px; text-transform: uppercase; letter-spacing: .12em; border: 1px solid rgba(255,255,255,0.3);">Elite Performance</span>
+        </div>
+      </div>
+
+      <div style="
+        height: 260px;
+        border-radius: 16px 16px 0 0;
+        overflow: hidden;
+        position: relative;
+        box-shadow: 0 -8px 24px rgba(0,0,0,0.18);
+        border-top: 2px solid rgba(255,255,255,0.25);
+        border-left: 2px solid rgba(255,255,255,0.25);
+        border-right: 2px solid rgba(255,255,255,0.25);
+      ">
+        <img src="../img/weights.jpg" alt="Strength training at Namma Gym" style="width: 100%; height: 100%; object-fit: cover; filter: brightness(.9) contrast(1.05);" />
+        <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(15,30,46,.8), transparent);"></div>
+        <div style="position: absolute; bottom: 20px; right: 20px; text-align: right;">
+          <span style="font-family: var(--ff-head); font-size: 10px; color: #ffffff; background: rgba(0,0,0,0.5); padding: 4px 10px; border-radius: 999px; text-transform: uppercase; letter-spacing: .12em; border: 1px solid rgba(255,255,255,0.2);">Strength &amp; Power</span>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+
+  <!-- ============== ADVANTAGE / HIGHLIGHTS ============== -->
+  <section class="section">
+    <div class="section__head">
+      <div>
+        <p class="eyebrow">THE LAB ADVANTAGE</p>
+        <h2>Combat &amp; Power Hardware.</h2>
+      </div>
+    </div>
+
+    <div class="services" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
+      <article class="svc">
+        <div class="svc__body">
+          <div style="width: 44px; height: 44px; border-radius: 12px; background: var(--orange-lt); color: var(--orange); display: flex; align-items: center; justify-content: center; font-size: 20px; margin-bottom: 20px;">
+            <i class="fa-solid fa-ring"></i>
+          </div>
+          <h3>16FT Regulation Octagon</h3>
+          <p>Train cage takedown defense, wall walking, and clinch control inside our full-spec competition cage.</p>
+          <ul class="svc__list">
+            <li><b>Rails</b><i>Seamless vinyl safety pads</i></li>
+            <li><b>Mats</b><i>Tatami wrestling subfloor</i></li>
+            <li><b>Sparring</b><i>Tue / Thu 7:30 PM</i></li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="svc">
+        <div class="svc__body">
+          <div style="width: 44px; height: 44px; border-radius: 12px; background: var(--orange-lt); color: var(--orange); display: flex; align-items: center; justify-content: center; font-size: 20px; margin-bottom: 20px;">
+            <i class="fa-solid fa-stopwatch-20"></i>
+          </div>
+          <h3>Laser Speed &amp; Turf Track</h3>
+          <p>30-meter indoor sprint strip with electronic timing gates to measure 10m acceleration, COD, and sled velocity.</p>
+          <ul class="svc__list">
+            <li><b>Hardware</b><i>Dual Rogue Dog Sleds</i></li>
+            <li><b>Timing</b><i>Micro-second optical array</i></li>
+            <li><b>Focus</b><i>First-step acceleration</i></li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="svc">
+        <div class="svc__body">
+          <div style="width: 44px; height: 44px; border-radius: 12px; background: var(--orange-lt); color: var(--orange); display: flex; align-items: center; justify-content: center; font-size: 20px; margin-bottom: 20px;">
+            <i class="fa-solid fa-heart-pulse"></i>
+          </div>
+          <h3>Anaerobic Engine Lab</h3>
+          <p>Target anaerobic lactic tolerance with Concept2 Rowers, SkiErgs, and Rogue Echo AirBikes in structured 3-minute combat rounds.</p>
+          <ul class="svc__list">
+            <li><b>Intensity</b><i>800+ kcal per session</i></li>
+            <li><b>Telemetry</b><i>Real-time heart rate zones</i></li>
+            <li><b>Rounds</b><i>3-minute championship pace</i></li>
+          </ul>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============== COMBAT TIMETABLE ============== -->
+  <section class="section section--paper section--wide">
+    <div class="section__head">
+      <div>
+        <p class="eyebrow">WEEKLY DRILLS</p>
+        <h2>Fighter Schedule.</h2>
+      </div>
+    </div>
+
+    <div class="sched-wrap">
+      <div class="sched">
+        <div class="sched__head"><b>DAY</b><i></i></div>
+        <div class="sched__head"><b>FOCUS</b><i>Discipline</i></div>
+        <div class="sched__head"><b>TIME</b><i>Morning Slot</i></div>
+        <div class="sched__head"><b>TIME</b><i>Evening Slot</i></div>
+        <div class="sched__head"><b>COACH</b><i>Lead</i></div>
+        <div class="sched__head"><b>LEVEL</b><i>Access</i></div>
+        <div class="sched__head"><b>ACTION</b><i>Book</i></div>
+        <div class="sched__head"><b>STATUS</b><i>Availability</i></div>
+
+        <div class="sched__row"><time>MON</time><b>Boxing Fundamentals</b><i>07:00 AM</i></div>
+        <div class="sched__row"><time>MON</time><b>Heavy Bag Conditioning</b><i>06:30 PM</i></div>
+        <div class="sched__row"><time>TUE</time><b>Muay Thai Clinch &amp; Knees</b><i>07:30 AM</i></div>
+        <div class="sched__row"><time>TUE</time><b>Cage Wall Takedowns</b><i>07:30 PM</i></div>
+        <div class="sched__row"><time>WED</time><b>Footwork &amp; Slip Angles</b><i>07:00 AM</i></div>
+        <div class="sched__row"><time>WED</time><b>Power Striking &amp; Mitts</b><i>06:30 PM</i></div>
+        <div class="sched__row"><time>THU</time><b>Controlled Sparring Clinic</b><i>07:30 PM</i></div>
+        <div class="sched__row"><time>FRI</time><b>MMA Ground Control</b><i>07:00 PM</i></div>
+      </div>
+    </div>
+
+    <p class="sched__cta"><a href="../auth/login.html" class="btn btn--outline">Reserve Fight Spot</a></p>
+  </section>
+
+  <!-- ============== MASTER COMBAT COACHES ============== -->
+  <section class="section">
+    <div class="section__head">
+      <div>
+        <p class="eyebrow">FIGHT LAB COACHES</p>
+        <h2>People who held the belt.</h2>
+      </div>
+    </div>
+
+    <div class="trainers">
+      <article class="trainer">
+        <div class="trainer__photo"><img src="../img/coach-2.jpg" alt="Coach Arjun Gowda" /></div>
+        <div class="trainer__info">
+          <h3 class="trainer__name">Arjun Gowda</h3>
+          <span class="trainer__role">Head Striking Coach · Pro MMA</span>
+          <p class="trainer__bio">Professional mixed martial artist and national Muay Thai medalist with 9 years coaching experience.</p>
+          <div class="trainer__spec">
+            <span>Muay Thai</span><span>Boxing</span><span>MMA Cage</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="trainer">
+        <div class="trainer__photo"><img src="../img/coach-1.jpg" alt="Coach Vikram Rao" /></div>
+        <div class="trainer__info">
+          <h3 class="trainer__name">Vikram Rao</h3>
+          <span class="trainer__role">Head of Strength · CSCS</span>
+          <p class="trainer__bio">11+ years coaching elite powerlifters and developing periodized mesocycle protocols.</p>
+          <div class="trainer__spec">
+            <span>Powerlifting</span><span>CSCS</span><span>Periodization</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="trainer">
+        <div class="trainer__photo"><img src="../img/coach-6.jpg" alt="Pradeep Kumar" /></div>
+        <div class="trainer__info">
+          <h3 class="trainer__name">Pradeep Kumar</h3>
+          <span class="trainer__role">Sprint &amp; Plyometrics Lead</span>
+          <p class="trainer__bio">Former state athletics coach managing laser speed gates and multi-vector agility training.</p>
+          <div class="trainer__spec">
+            <span>Speed Turf</span><span>Plyometrics</span><span>Agility</span>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============== CTA STRIP ============== -->
+  <section class="cta-strip">
+    <h2>Step inside the combat floor.</h2>
+    <p>Grab your 1-day pass for ₹199. Gloves and hand wraps available at the desk.</p>
+    <a href="pricing.html" class="btn btn--lg">Start Fighter Pass</a>
+  </section>
+  <!-- ============== FOOTER ============== -->
+  <footer class="ftr">
+
+    <!-- Newsletter CTA Band -->
+    <div class="ftr__cta">
+      <div class="ftr__cta-inner">
+        <div class="ftr__cta-copy">
+          <h3>Stay in the loop.</h3>
+          <p>Training notes, program drops, and Namma Gym news â€” straight to your inbox.</p>
+        </div>
+        <form class="ftr__cta-form" id="footerNewsletterForm">
+          <input type="email" id="footerEmailInput" placeholder="your@email.com" autocomplete="email" />
+          <button type="submit">Join the Dispatch</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Main Footer Body -->
+    <div class="ftr__body">
+      <div class="ftr__main">
+
+        <!-- Brand Block -->
+        <div class="ftr__brand">
+          <span class="hdr__mark"><img src="../assets/logo.png" alt="Namma Gym Logo" /></span>
+          <p class="ftr__brand-name">NAMMA<span>GYM</span></p>
+          <p class="ftr__brand-tagline">Indiranagar's neighbourhood gym since 2014. No shiny lobby. Just iron, grit, and community.</p>
+          <address class="ftr__address" style="font-style: normal;">
+            <strong>Flagship â€” Indiranagar</strong><br />
+            12th Main Road, 100ft Road, Stage 2<br />
+            Bengaluru, Karnataka 560038<br />
+            <strong>Branch â€” Koramangala</strong><br />
+            80 Feet Road, 6th Block<br />
+            Bengaluru, Karnataka 560095
+          </address>
+          <div class="ftr__socials">
+            <a href="#" class="ftr__social-btn" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="ftr__social-btn" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#" class="ftr__social-btn" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="#" class="ftr__social-btn" aria-label="Strava"><i class="fa-brands fa-strava"></i></a>
+          </div>
+        </div>
+
+        <!-- Visit Column -->
+        <div class="ftr__col">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="FAQ.html">FAQ</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Members Column -->
+        <div class="ftr__col">
+          <h4>Members</h4>
+          <ul>
+            <li><a href="../auth/login.html">Member Login</a></li>
+            <li><a href="../auth/signup.html">Join Free Trial</a></li>
+            <li><a href="../auth/user/user-dashboard.html">Member Portal</a></li>
+            <li><a href="../auth/login.html">Reserve a Class</a></li>
+            <li><a href="../auth/login.html">Workout Plans</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Column -->
+        <div class="ftr__col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="tel:+918012345678">+91 80 1234 5678</a></li>
+            <li><a href="mailto:hello@nammagym.in">hello@nammagym.in</a></li>
+            <li><a href="contact.html">Visit the Gym</a></li>
+            <li><a href="Privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="Terms-of-service.html">Terms of Service</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Decorative tags divider -->
+    <div class="ftr__divider">
+      <span class="ftr__tag ftr__tag--accent">Est. 2014</span>
+      <span class="ftr__tag">Strength &amp; Conditioning</span>
+      <span class="ftr__tag">Boxing &amp; MMA</span>
+      <span class="ftr__tag">Hydrotherapy</span>
+      <span class="ftr__tag">Personal Training</span>
+      <span class="ftr__tag">Indiranagar Â· Koramangala</span>
+      <span class="ftr__tag">Open 5 AM â€“ 11 PM</span>
+    </div>
+
+    <!-- Bottom bar -->
+    <div class="ftr__strip">
+      <span>Â© 2026 Namma Gym Pvt. Ltd. Â· Bengaluru, Karnataka</span>
+      <span style="font-family: var(--ff-head); letter-spacing: .1em; font-size: 10px; color: rgba(255,255,255,.12); text-transform: uppercase;">SQUAT Â· BENCH Â· DEADLIFT</span>
+      <span><a href="Privacy-policy.html">Privacy</a> &nbsp;Â·&nbsp; <a href="Terms-of-service.html">Terms</a></span>
+    </div>
+
+  </footer>
+
+  <script src="../js/navbar.js"></script>
+  <script src="../js/form-validation.js"></script>
+  <script src="../js/script.js"></script>
+</body>
+
+</html>

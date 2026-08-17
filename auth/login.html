@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Member &amp; Staff Login · Namma Gym</title>
+  <meta name="description" content="Log in to access your workout plan, class reservations, and coach chat at Namma Gym." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="icon" href="../assets/logo.png" />
+</head>
+
+<body class="page-public" style="min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 32px 16px; background: var(--paper);">
+
+  <!-- Main Login Card Grid -->
+  <div style="max-width: 900px; width: 100%; background: #fff; border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow-2); display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));">
+    
+    <!-- Left Hero Banner -->
+    <div style="background: var(--navy); padding: 48px 40px; color: #fff; display: flex; flex-direction: column; justify-content: space-between; position: relative; overflow: hidden;">
+      <div style="position: relative; z-index: 2;">
+        <a href="../index.html" style="color: var(--orange); font-family: var(--ff-head); font-size: 11px; letter-spacing: .08em; text-transform: uppercase; text-decoration: none; display: inline-flex; align-items: center; gap: 6px; margin-bottom: 24px;">
+          <i class="fa-solid fa-arrow-left"></i> Back to Club
+        </a>
+        <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 24px;">
+          <span class="hdr__mark" style="width: 40px; height: 40px;">
+            <img src="../assets/logo.png" alt="Namma Gym Logo" />
+          </span>
+          <span style="font-family: var(--ff-display); font-size: 22px; letter-spacing: .04em;">NAMMA<span style="color:var(--orange)">GYM</span></span>
+        </div>
+        <p class="eyebrow" style="margin-bottom: 12px;">MEMBER ACCESS</p>
+        <h2 style="color: #fff; margin-bottom: 16px; line-height: 1.05;">Step through the gate.</h2>
+        <ul style="color: #cbd5e1; font-size: 13px; display: flex; flex-direction: column; gap: 10px; margin: 0; padding-left: 18px;">
+          <li>Reserve classes 14 days in advance</li>
+          <li>Track working weights &amp; PR streaks</li>
+          <li>Direct 24/7 coach messaging portal</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Right Login Form -->
+    <div style="padding: 48px 40px; background: #fff;">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 28px;">
+        <div>
+          <h2 style="margin: 0; font-size: 32px;">Sign In</h2>
+          <span style="font-size: 13px; color: var(--gray);">Access your member or staff portal.</span>
+        </div>
+        <a href="signup.html" style="font-family: var(--ff-head); font-size: 11px; color: var(--orange); text-transform: uppercase; font-weight: 800; text-decoration: none;">Join Free &rarr;</a>
+      </div>
+
+      <form id="loginForm" data-form="login" novalidate style="display: flex; flex-direction: column; gap: 18px;">
+        <div>
+          <label for="memberId" style="display: block; font-family: var(--ff-head); font-size: 11px; letter-spacing: .06em; text-transform: uppercase; color: var(--navy); margin-bottom: 6px;">Member ID or Email</label>
+          <input type="text" id="memberId" name="memberId" placeholder="e.g. NG-0042 or admin@nammagym.in" value="NG-0042" required style="width: 100%; padding: 12px 16px; border-radius: 8px; border: 1px solid var(--line); font-size: 14px; background: var(--paper); outline: none;" />
+        </div>
+
+        <div>
+          <div style="display: flex; justify-content: space-between; margin-bottom: 6px;">
+            <label for="password" style="font-family: var(--ff-head); font-size: 11px; letter-spacing: .06em; text-transform: uppercase; color: var(--navy);">Password</label>
+            <a href="#" style="font-size: 12px; color: var(--gray); text-decoration: none;">Forgot?</a>
+          </div>
+          <input type="password" id="password" name="password" placeholder="••••••••" value="demo123" required style="width: 100%; padding: 12px 16px; border-radius: 8px; border: 1px solid var(--line); font-size: 14px; background: var(--paper); outline: none;" />
+        </div>
+
+        <button type="submit" class="btn btn--lg" style="width: 100%; margin-top: 8px;">
+          <span>Authenticate &amp; Enter</span> <i class="fa-solid fa-arrow-right-to-bracket text-xs"></i>
+        </button>
+      </form>
+
+      <!-- Quick Demo Logins -->
+      <div style="margin-top: 32px; padding-top: 24px; border-top: 1px solid var(--line);">
+        <span style="display: block; font-family: var(--ff-head); font-size: 10px; letter-spacing: .08em; text-transform: uppercase; color: var(--gray); margin-bottom: 12px;">Quick Demo Portals:</span>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
+          <a href="user/user-dashboard.html" style="padding: 12px; background: var(--paper); border: 1px solid var(--line); border-radius: 8px; text-decoration: none; color: var(--navy); display: block;">
+            <b style="color: #10b981; font-size: 12px; display: block; font-family: var(--ff-head);">👤 Member Portal</b>
+            <span style="font-size: 11px; color: var(--gray);">NG-0042 (Karthik)</span>
+          </a>
+          <a href="admin/admin-dashboard.html" style="padding: 12px; background: var(--paper); border: 1px solid var(--line); border-radius: 8px; text-decoration: none; color: var(--navy); display: block;">
+            <b style="color: #ef4444; font-size: 12px; display: block; font-family: var(--ff-head);">🛡️ Staff Admin</b>
+            <span style="font-size: 11px; color: var(--gray);">NG-ADMIN (Staff)</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="../js/form-validation.js"></script>
+  <script src="../js/navbar.js"></script>
+  <script src="../js/script.js"></script>
+</body>
+
+</html>
