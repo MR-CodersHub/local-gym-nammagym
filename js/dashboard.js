@@ -16,14 +16,12 @@
 
     if (showQrBtn && qrModal) {
       showQrBtn.addEventListener('click', () => {
-        qrModal.classList.remove('hidden');
-        qrModal.classList.add('flex');
+        qrModal.style.display = 'flex';
       });
     }
     if (closeQrBtn && qrModal) {
       closeQrBtn.addEventListener('click', () => {
-        qrModal.classList.add('hidden');
-        qrModal.classList.remove('flex');
+        qrModal.style.display = 'none';
       });
     }
 
